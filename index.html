@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise Library</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Exercise Library</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Exercise Library</h1>
-    </header>
-    <main class="exercise-grid">
-        <div class="exercise-card">
-            <img src="pushup.jpg" alt="Push-Up">
-            <h2>Push-Up</h2>
-            <p><strong>Muscles:</strong> Chest, Triceps, Core</p>
-            <p>Start in a plank position. Lower your body by bending your elbows, then push back up. Keep your core engaged.</p>
-        </div>
-        <div class="exercise-card">
-            <img src="squat.jpg" alt="Squat">
-            <h2>Squat</h2>
-            <p><strong>Muscles:</strong> Legs, Glutes</p>
-            <p>Stand with feet shoulder-width apart. Lower your hips back and down, keeping your knees behind your toes, then return to standing.</p>
-        </div>
-        <!-- Add more exercises here -->
-    </main>
+  <h1>Exercise Library</h1>
+  <div id="filters"></div>
+  <div id="exercise-container"></div>
+
+  <script src="exercises.json" type="application/json" id="exercise-data"></script>
+  <script>
+    const data = JSON.parse(document.getElementById('exercise-data').textContent);
+    const areas = [...new Set(data.flatMap(ex => ex.areas))].sort();
+    const container = document.getElementById('exercise-container');
+    const filters = document.getElementById('filters');
+
+    function renderExercises(filter = null) {
+      container.innerHTML = '';
+      data.filter(ex => !filter || ex.areas.includes(filter)).forEach(ex => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <img src="images/${ex.image}" alt="${ex.name}">
+          <h3>${ex.name}</h3>
+          <p>${ex.description || '(No description yet)'}</p>
+          <div class="tags">${ex.areas.map(a => `<span>${a}</span>`).join(' ')}</div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    areas.forEach(area => {
+      const btn = document.createElement('button');
+      btn.textContent = area;
+      btn.onclick = () => renderExercises(area);
+      filters.appendChild(btn);
+    });
+
+    const showAllBtn = document.createElement('button');
+    showAllBtn.textContent = 'Show All';
+    showAllBtn.onclick = () => renderExercises(null);
+    filters.prepend(showAllBtn);
+
+    renderExercises();
+  </script>
 </body>
 </html>
