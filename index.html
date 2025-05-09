@@ -37,11 +37,7 @@
         const closeBtn = document.querySelector('.close-button');
         const timerSound = document.getElementById('timer-sound');
         let currentFilter = null;
-        const activeTimer = {
-  id: null,
-  interval: null,
-  originalLabel: null
-};
+        
 
         function openModal(content) {
           modalBody.innerHTML = content;
@@ -91,55 +87,64 @@
             container.appendChild(card);
           });
 
-          document.querySelectorAll('.timer-btn').forEach(button => {
-      button.addEventListener('click', () => {
-        const minutes = parseInt(button.dataset.minutes);
-        const thisId = button.dataset.id;
+          const activeTimer = {
+  id: null,
+  interval: null,
+  originalLabel: null
+};
 
-        if (thisId === activeTimer.id) {
-          clearInterval(activeTimer.interval);
-          const btn = document.querySelector(`[data-id="${thisId}"]`);
-          if (btn) {
-            btn.textContent = activeTimer.originalLabel || `Start ${minutes} min`;
-            btn.disabled = false;
-          }
-          activeTimer.id = null;
-          activeTimer.interval = null;
-          activeTimer.originalLabel = null;
-          return;
+document.querySelectorAll('.timer-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const minutes = parseInt(button.dataset.minutes);
+    const thisId = button.dataset.id;
+
+    // Reset if same timer clicked
+    if (thisId === activeTimer.id) {
+      clearInterval(activeTimer.interval);
+      const btn = document.querySelector(`[data-id="${thisId}"]`);
+      if (btn) {
+        btn.textContent = activeTimer.originalLabel || `Start ${minutes} min`;
+        btn.disabled = false;
+      }
+      activeTimer.id = null;
+      activeTimer.interval = null;
+      activeTimer.originalLabel = null;
+      return;
+    }
+
+    // Prevent new timer if one is already running
+    if (activeTimer.interval) return;
+
+    const original = button.textContent;
+    let remaining = minutes * 60;
+    button.disabled = true;
+    button.textContent = `${Math.floor(remaining / 60)}:${(remaining % 60).toString().padStart(2, '0')}`;
+
+    activeTimer.id = thisId;
+    activeTimer.originalLabel = original;
+
+    activeTimer.interval = setInterval(() => {
+      remaining--;
+      if (remaining < 0) {
+        clearInterval(activeTimer.interval);
+        const btn = document.querySelector(`[data-id="${thisId}"]`);
+        if (btn) {
+          btn.textContent = original;
+          btn.disabled = false;
         }
-
-        if (activeTimer.interval) return;
-
-        const original = button.textContent;
-        let remaining = minutes * 60;
-        button.disabled = true;
-        button.textContent = `${Math.floor(remaining / 60)}:${(remaining % 60).toString().padStart(2, '0')}`;
-
-        activeTimer.id = thisId;
-        activeTimer.originalLabel = original;
-
-        activeTimer.interval = setInterval(() => {
-          remaining--;
-          if (remaining < 0) {
-            clearInterval(activeTimer.interval);
-            const btn = document.querySelector(`[data-id="${thisId}"]`);
-            if (btn) {
-              btn.textContent = original;
-              btn.disabled = false;
-            }
-            activeTimer.id = null;
-            activeTimer.interval = null;
-            activeTimer.originalLabel = null;
-            timerSound.play();
-            alert("Time's up!");
-          } else {
-            const m = Math.floor(remaining / 60);
-            const s = remaining % 60;
-            button.textContent = `${m}:${s.toString().padStart(2, '0')}`;
-          }
-        }, 1000);
-      });
+        activeTimer.id = null;
+        activeTimer.interval = null;
+        activeTimer.originalLabel = null;
+        timerSound.play();
+        alert("Time's up!");
+      } else {
+        const m = Math.floor(remaining / 60);
+        const s = remaining % 60;
+        button.textContent = `${m}:${s.toString().padStart(2, '0')}`;
+      }
+    }, 1000);
+  });
+});
             button.addEventListener('click', () => {
               const minutes = parseInt(button.dataset.minutes);
               const key = button.dataset.id;
