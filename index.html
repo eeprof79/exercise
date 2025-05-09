@@ -56,7 +56,7 @@
         function renderExercises(filter = null) {
           currentFilter = filter;
           container.innerHTML = '';
-          activeTimers.clear();
+          
 
           data.filter(ex => !filter || ex.areas.includes(filter)).forEach((ex, i) => {
             const card = document.createElement('div');
@@ -96,7 +96,6 @@
         const minutes = parseInt(button.dataset.minutes);
         const thisId = button.dataset.id;
 
-        // If this is the currently running timer, reset it
         if (thisId === activeTimer.id) {
           clearInterval(activeTimer.interval);
           const btn = document.querySelector(`[data-id="${thisId}"]`);
@@ -110,10 +109,8 @@
           return;
         }
 
-        // If a different timer is running, ignore
         if (activeTimer.interval) return;
 
-        // Start a new timer
         const original = button.textContent;
         let remaining = minutes * 60;
         button.disabled = true;
