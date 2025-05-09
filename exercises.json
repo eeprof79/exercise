@@ -2,80 +2,78 @@
   {
     "name": "Sitting Heel Raises with Block",
     "description": "Helps to coordinate movement of the entire lower extremity.",
-    "own_it": "Do 3 sets of 10 repetitions.",
+    "images": [
+      "SittingHeelBlock1.jpg",
+      "SittingHeelBlock2.jpg"
+    ],
+    "tags": [
+      "Feet",
+      "Ankle"
+    ],
+    "ownIt": "Do 3 sets of 10 repetitions.",
     "timers": [],
-    "instructions": [
+    "howTo": [
       "Sit in the middle of a chair with your feet pointed straight ahead, 4-6 inches apart.",
       "Place a pillow between your knees and apply gentle pressure inward, just enough to hold the pillow in place.",
       "Roll your hips forward to place an arch in your low back and hold throughout the exercise.",
       "Lift your heels off the floor using your front hip muscles to generate the movement and then lower them back to the floor.",
       "Repeat as directed on your menu."
-    ],
-    "images": [
-      "SittingHeelBlock1.jpg",
-      "SittingHeelBlock2.jpg"
-    ],
-    "areas": [
-      "Feet Menu",
-      "Ankle Menu",
-      "Shoulders with Pain"
     ]
   },
   {
     "name": "Short foot",
     "description": "Mimics proper foot and ankle movement during gait and starts to take away compensations in the load joints.",
-    "own_it": "Do 3 sets of 10 repetitions on each side.",
+    "images": [
+      "ShortFoot.jpg"
+    ],
+    "tags": [
+      "Feet"
+    ],
+    "ownIt": "Do 3 sets of 10 repetitions on each side.",
     "timers": [],
-    "instructions": [
+    "howTo": [
       "Start with feet hip-width apart",
       "Bring your right foot forward so the heel is aligned with the toes on your left foot",
       "Bend knees slighly and lift your toes of your right foot off the floor (not the ball of your foot)",
       "Lower your toes and press them into the floor without lifting your heel",
       "And repeat on the left foot"
-    ],
-    "images": [
-      "ShortFoot.jpg"
-    ],
-    "areas": [
-      "Feet Menu",
-      "Hips Pelvis (with Pain)",
-      "Necks"
     ]
   },
   {
     "name": "Static Back",
     "description": "Settles your hips and back, releasing the compensating muscles that interfere with balance and functional movement.",
-    "own_it": "Hold this position for 5 minutes.",
+    "images": [
+      "StaticBack.jpg"
+    ],
+    "tags": [
+      "Feet"
+    ],
+    "ownIt": "Hold this position for 5 minutes.",
     "timers": [
       5
     ],
-    "instructions": [
+    "howTo": [
       "Lie on your back with your legs up over your inflatable large block or up over a chair/couch.",
       "Your arms are at 45 degrees and your palms up.",
       "Try to relax your upper back and notice if your low back is flat evenly from left to right.",
       "HOLD"
-    ],
-    "images": [
-      "StaticBack.jpg"
-    ],
-    "areas": [
-      "Feet Menu",
-      "Knees with External Femur Rotation",
-      "Hips Pelvis (with Pain)",
-      "Back - Lumbar Pain/Herniated Discs",
-      "Back - Thoracic Back Pain",
-      "Shoulders with Pain",
-      "Headaches"
     ]
   },
   {
     "name": "Frog",
-    "description": "Releases the powerful thigh and groin muscles to allow the pelvis to settle into a neutral position.",
-    "own_it": "Hold for 2 minutes.",
+    "description": "Releases the powerful thigh and groin muscles to allow the pelvis to settle into a neutral position. ",
+    "images": [
+      "Frog1.jpg",
+      "Frog2.jpg"
+    ],
+    "tags": [
+      "Feet"
+    ],
+    "ownIt": "Hold for 2 minutes.",
     "timers": [
       2
     ],
-    "instructions": [
+    "howTo": [
       "Lie on your back with your arms at your side, palms up, and hands relaxed",
       "If directed to do so by your menu, place a towel under your lower back",
       "Place the soles of your feet together",
@@ -84,21 +82,22 @@
       "Do not press your knees/ legs to the ground. Just let gravity pull them down",
       "You should feel a stretch along the inner thigh",
       "Hold the position as directed on your menu"
-    ],
-    "images": [
-      "Frog1.jpg",
-      "Frog2.jpg"
-    ],
-    "areas": [
-      "Feet Menu"
     ]
   },
   {
     "name": "Foot Circles/Point Flexes",
     "description": "Increases ankle mobility and restores balance to the muscles of the lower extremity.",
-    "own_it": "Do 20 flexes on each side.",
+    "images": [
+      "FootCircles1.jpg",
+      "FootCircles2.jpg"
+    ],
+    "tags": [
+      "Feet",
+      "Ankle"
+    ],
+    "ownIt": "Do 20 flexes on each side.",
     "timers": [],
-    "instructions": [
+    "howTo": [
       "Lie on your back with one leg extended and the other leg bent and pulled up toward your chest.",
       "Clasp your hands behind the bent knee.",
       "Keep the foot on the floor pointed straight up toward the ceiling and your thigh muscles relaxed.",
@@ -106,23 +105,21 @@
       "Make sure the knee stays absolutely still with movement coming from the ankle and not the knee.",
       "For the point/flexes, bring the toes back toward the shin to flex, then reverse the direction to point the foot forward for the indicated number of reps.",
       "Switch legs and repeat."
-    ],
-    "images": [
-      "FootCircles1.jpg",
-      "FootCircles2.jpg"
-    ],
-    "areas": [
-      "Feet Menu",
-      "Ankle Menu",
-      "Hips Pelvis (no Pain)"
     ]
   },
   {
     "name": "Calf/Hamstring Stretch",
     "description": "Restores blalnce to all the muscles from the hip to the foot.",
-    "own_it": "Hold it for 30 seconds on each side for both.",
+    "images": [
+      "CalfHamStretch1.jpg",
+      "CalfHamStretch2.jpg"
+    ],
+    "tags": [
+      "Feet"
+    ],
+    "ownIt": "Hold it for 30 seconds on each side for both.",
     "timers": [],
-    "instructions": [
+    "howTo": [
       "Lie on your back with your knees bent",
       "Position 1: Take a strap or belt and loop it under the ball of one foot",
       "Firmly holding the ends of the strap, straighten that leg and PULL YOUR TOES DOWN toward your hips to feel a stretch in the calf or back of your lower leg",
@@ -134,24 +131,24 @@
       "Do NOT let the hip lift up off the floor",
       "Hold as directed on your menu (30 to 60 seconds)",
       "Switch legs and repeat both positions"
-    ],
-    "images": [
-      "CalfHamStretch1.jpg",
-      "CalfHamStretch2.jpg"
-    ],
-    "areas": [
-      "Feet Menu"
     ]
   },
   {
     "name": "Static Extension Position",
     "description": "Improves pelvic and spine imbalance to improve load joint function.",
-    "own_it": "Hold for 1 or 2 minutes.",
+    "images": [
+      "StaticExt.jpg"
+    ],
+    "tags": [
+      "Feet",
+      "Ankle"
+    ],
+    "ownIt": "Hold for 1 or 2 minutes.",
     "timers": [
       1,
       2
     ],
-    "instructions": [
+    "howTo": [
       "Start on your hands and knees.",
       "Move your hands about 6 inches forward and then move your upper body forward so that your shoulders are above your hands.",
       "Your hips are now forward of your knees about 6 inches.",
@@ -159,33 +156,24 @@
       "Drop your head.",
       "Your low back arches because your hips roll forward to allow this movement to occur.",
       "HOLD"
-    ],
-    "images": [
-      "StaticExt.jpg"
-    ],
-    "areas": [
-      "Feet Menu",
-      "Ankle Menu",
-      "Knees with External Femur Rotation",
-      "Hips Pelvis (with Pain)",
-      "Back - Lumbar Pain/Herniated Discs",
-      "Back - Thoracic Back Pain",
-      "Shoulders No Pain but with Motion Restrictions",
-      "Necks",
-      "Headaches",
-      "Elbows"
     ]
   },
   {
     "name": "Air Bench",
     "description": "Puts the hips, knees and ankles simultaneously into flexion while they are under load.",
-    "own_it": "Hold for 1 to 3 minutes or as long as you can.",
+    "images": [
+      "AirBench.jpg"
+    ],
+    "tags": [
+      "Feet"
+    ],
+    "ownIt": "Hold for 1 to 3 minutes or as long as you can.",
     "timers": [
       1,
       2,
       3
     ],
-    "instructions": [
+    "howTo": [
       "Stand with your back against a wall with feet and knees hip width apart and feet pointed straight.",
       "Walk your feet away from the wall while sliding your body down at the same time.",
       "You will be \"seated\" in an invisible chair, with your knees bent to 105 degrees.",
@@ -196,45 +184,41 @@
       "Keep the weight in your heels, do not press forward on your toes.",
       "DO NOT DO THIS E-CISE IN SOCKS!",
       "DO THIS EXERCISE IN ATHLETIC SHOES OR ON A YOGA MAT!"
-    ],
-    "images": [
-      "AirBench.jpg"
-    ],
-    "areas": [
-      "Feet Menu",
-      "Knees with Internal Femur Rotation",
-      "Hips Pelvis (with Pain)",
-      "Shoulders with Pain",
-      "Necks",
-      "Hands and Wrists"
     ]
   },
   {
     "name": "Standing Arm Circles",
     "description": "Strengthens the muscles of the upper back and shoulders and balances the top of the kinetic chain and pelvis.",
-    "own_it": "Do 50 with palms down and 50 with palms up.",
+    "images": [
+      "StandArmCircles1.jpg",
+      "StandArmCircles2.jpg"
+    ],
+    "tags": [
+      "Ankle"
+    ],
+    "ownIt": "Do 50 with palms down and 50 with palms up.",
     "timers": [],
-    "instructions": [
+    "howTo": [
       "Stand facing mirror with your feet pointed straight ahead. Place your finger tips into the pad of each hand and point your thumb straight out.",
       "This hand position is imperative to the exercise being done correctly. It is called the \"golfer's grip\".",
       "Squeeze your shoulder blades together backwards and bring your arms out to your sides at shoulder level.",
       "With your palms facing downward, circle up and forward for the repetitions specified. With your palms facing upward, circle up and back for the desired repetitions.",
       "Remember to keep your feet straight and your shoulder blades squeezed together."
-    ],
-    "images": [
-      "StandArmCircles1.jpg",
-      "StandArmCircles2.jpg"
-    ],
-    "areas": [
-      "Ankle Menu"
     ]
   },
   {
     "name": "Abduction-Adduction with Narrow and Wide Feet",
     "description": "Helps promote femur rotation and reduces imbalance in the pelvis and torso.",
-    "own_it": "Do 2 sets of 10 repetitions of each position.",
+    "images": [
+      "AdAbuct1.jpg",
+      "AdAbuct2.jpg"
+    ],
+    "tags": [
+      "Ankle"
+    ],
+    "ownIt": "Do 2 sets of 10 repetitions of each position.",
     "timers": [],
-    "instructions": [
+    "howTo": [
       "Lie on your back with your knees bent at a 90 degree angle and your feet flat on the wall.",
       "Keep your feet parallel, spaced about 3 inches apart, and pointed to the ceiling.",
       "Keep your upper body relaxed, with your palms up and your arms flat on the floor at about a 45 degree angle from your body.",
@@ -243,25 +227,24 @@
       "The bottoms of your feet will come off of the wall and the outsides of your feet will touch the wall.",
       "Return your knees to the start position to complete one repetition of the e-cise.",
       "Repeat as directed on your menu."
-    ],
-    "images": [
-      "AdAbuct1.jpg",
-      "AdAbuct2.jpg"
-    ],
-    "areas": [
-      "Ankle Menu"
     ]
   },
   {
     "name": "Static Wall",
     "description": "Engages and balances the muscles in the front of the thighs, lower legs and pelvis.",
-    "own_it": "Hold for 3 to 5 minutes.",
+    "images": [
+      "StaticWall.jpg"
+    ],
+    "tags": [
+      "Ankle"
+    ],
+    "ownIt": "Hold for 3 to 5 minutes.",
     "timers": [
       3,
       4,
       5
     ],
-    "instructions": [
+    "howTo": [
       "Lie on your back with your legs pointed straight up and against the wall, upper body relaxed with arms out to sides at about 45 degrees and palms facing up feet should be hip width apart.",
       "When getting into this position, get your hips as close as possible to the wall, so once you are in position your butt is also as close as possible to the wall.",
       "If your hips are lifting off the floor then scoot your butt back until you are able to place your hips flat. As you get more functional, your hips will sit closer to the wall and be flat on the floor at the same time.",
@@ -269,81 +252,73 @@
       "Your feet must be pointed straight(parallel) for your hips to properly do the needed work to stabilize your spine.",
       "Hold as directed on your menu.",
       "This exercise promotes thoracic extension while limiting the rotation ability of the lower load joints."
-    ],
-    "images": [
-      "StaticWall.jpg"
-    ],
-    "areas": [
-      "Ankle Menu"
     ]
   },
   {
     "name": "Cats and Dogs",
     "description": "Works the hips, spine, shoulders and neck in coordinated flexion-extension.",
-    "own_it": "Do 1 set of 10.",
-    "timers": [],
-    "instructions": [
-      "Get on your hands and knees.",
-      "CAT: Pull your hips under, pull your head under and push your upper back to the ceiling.",
-      "DOG: Roll your hips forward to put the arch in your back, collapse your shoulder blades together and look up.",
-      "This exercise promotes bilateral spine flexion and extension while loading the shoulder and hip joints."
-    ],
     "images": [
       "CatsDogs1.jpg",
       "CatsDogs2.jpg"
     ],
-    "areas": [
-      "Ankle Menu",
-      "Shoulders with Pain",
-      "Shoulders No Pain but with Motion Restrictions",
-      "Headaches",
-      "Elbows"
+    "tags": [
+      "Ankle"
+    ],
+    "ownIt": "Do 1 set of 10.",
+    "timers": [],
+    "howTo": [
+      "Get on your hands and knees.",
+      "CAT: Pull your hips under, pull your head under and push your upper back to the ceiling.",
+      "DOG: Roll your hips forward to put the arch in your back, collapse your shoulder blades together and look up.",
+      "This exercise promotes bilateral spine flexion and extension while loading the shoulder and hip joints."
     ]
   },
   {
     "name": "Cross Crawling",
     "description": "Promotes proper and coordinated flexion and extension of the hips and shoulders simeltaneously.",
-    "own_it": "Do 2 sets of 10 repetitions on each side.",
-    "timers": [],
-    "instructions": [
-      "Lie on your back with both of your legs stretched out and your arms resting beside your body(palms down).",
-      "Simultaneously, raise one arm and the opposite leg. The arm remains locked straight as you take it overhead and the opposite leg is bent at the knee joint as you pull that knee up toward your chest.",
-      "After you have lifted them up, return them back to the floor and switch sides.",
-      "REPEAT"
-    ],
     "images": [
       "CrossCrawl1.jpg",
       "CrossCrawl2.jpg"
     ],
-    "areas": [
-      "Ankle Menu"
+    "tags": [
+      "Ankle"
+    ],
+    "ownIt": "Do 2 sets of 10 repetitions on each side.",
+    "timers": [],
+    "howTo": [
+      "Lie on your back with both of your legs stretched out and your arms resting beside your body(palms down).",
+      "Simultaneously, raise one arm and the opposite leg. The arm remains locked straight as you take it overhead and the opposite leg is bent at the knee joint as you pull that knee up toward your chest.",
+      "After you have lifted them up, return them back to the floor and switch sides.",
+      "REPEAT"
     ]
   },
   {
     "name": "Flexion Knee Pillow Squeezes",
     "description": "Helps the adductor muscles do their primary assignment, rather than trying to operate as gait muscles.",
-    "own_it": "Do 3 sets of 10 repetitions.",
-    "timers": [],
-    "instructions": [
-      "Sit in a chair with a pillow between your knees and your pelvis rolled forward to place an arch in your lower back.",
-      "Keep your feet pointed straight ahead and your upper body relaxed.",
-      "Squeeze and release the pillow between your knees and remember to keep the arch in your low back. Remember to keep your feet pointed straight ahead."
-    ],
     "images": [
       "FlexKneeSqueezes.jpg"
     ],
-    "areas": [
-      "Knees with External Femur Rotation"
+    "tags": [],
+    "ownIt": "Do 3 sets of 10 repetitions.",
+    "timers": [],
+    "howTo": [
+      "Sit in a chair with a pillow between your knees and your pelvis rolled forward to place an arch in your lower back.",
+      "Keep your feet pointed straight ahead and your upper body relaxed.",
+      "Squeeze and release the pillow between your knees and remember to keep the arch in your low back. Remember to keep your feet pointed straight ahead."
     ]
   },
   {
     "name": "Standing Quad Stretch",
     "description": "Helps to balance the quadriceps and hamstring muscles to balance pelvis and torso position.",
-    "own_it": "Hold for 1 minute on each side.",
+    "images": [
+      "StandQuadStretch.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Hold for 1 minute on each side.",
     "timers": [
       1
     ],
-    "instructions": [
+    "howTo": [
       "Stand on one foot and bend the other leg back and place the top of the foot on the back of a chair or a block.",
       "The height of the foot dictates the amount of stretch in the quadriceps muscles(thighs).",
       "Keep your hips and shoulders square to the wall.",
@@ -352,23 +327,20 @@
       "You must keep your hips level.",
       "Try to tilt your butt under(suck and tuck).",
       "Hold. If needed, hold onto something for balance."
-    ],
-    "images": [
-      "StandQuadStretch.jpg"
-    ],
-    "areas": [
-      "Knees with External Femur Rotation",
-      "Hands and Wrists"
     ]
   },
   {
     "name": "Standing Forward Bend",
     "description": "Allows for coordinated movement on both sides of the trunk and pelvis and balances muscles along the front and back of the body, stabilizing the pelvis.",
-    "own_it": "Hold this position for 1 minute.",
+    "images": [
+      "StandForwardBend.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Hold this position for 1 minute.",
     "timers": [
       1
     ],
-    "instructions": [
+    "howTo": [
       "Stand with your feet pointing straight and hip width apart.",
       "Place your palms on your low back/upper buttocks area.",
       "Tilt your hips forward to place an exaggerated arch in your low back.",
@@ -377,70 +349,58 @@
       "Keep the low back arched as you bend over.",
       "Tighten your thighs and shift the weight into the balls of your feet.",
       "Hold as directed on your menu."
-    ],
-    "images": [
-      "StandForwardBend.jpg"
-    ],
-    "areas": [
-      "Knees with External Femur Rotation"
     ]
   },
   {
     "name": "Progressive Supine Groin",
     "description": "Allows fpr proper flexion and extension of the leg while reducing compensating side-to-side and rotational motions.",
-    "own_it": "Hold each position for 3 minutes and repeat on the opposite side.",
+    "images": [
+      "ProgSupineGroin.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Hold each position for 3 minutes and repeat on the opposite side.",
     "timers": [
       3
     ],
-    "instructions": [
+    "howTo": [
       "Lie on your back with one leg up over your inflatable large block or chair.",
       "Your other leg is straight out on the floor with it propped up from the side.",
       "Your arms should be at 45 degrees with your palms up. Relax your upper body and notice that your low back should begin to get flatter to the floor the longer you are in this position.",
       "HOLD and relax, then repeat on other leg."
-    ],
-    "images": [
-      "ProgSupineGroin.jpg"
-    ],
-    "areas": [
-      "Knees with External Femur Rotation",
-      "Shoulders with Pain",
-      "Elbows"
     ]
   },
   {
     "name": "Standing Wall with Pillow between Knees",
     "description": "Promotes proper positioning of all load joints.",
-    "own_it": "Hold for 6 to 8 minutes.",
+    "images": [
+      "StandWallPillow.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Hold for 6 to 8 minutes.",
     "timers": [
       6,
       7,
       8
     ],
-    "instructions": [
+    "howTo": [
       "Stand with your feet pointing straight and hip width apart.",
       "Place a pillow between your knees and using your inner thighs, squeeze and release the pillow evenly.",
       "Do not use your abdominal muscles or upper body; both should remain relaxed throughout the e-cise.",
       "Repeat as directed on your menu."
-    ],
-    "images": [
-      "StandWallPillow.jpg"
-    ],
-    "areas": [
-      "Knees with Internal Femur Rotation",
-      "Shoulders with Pain",
-      "Necks",
-      "Headaches",
-      "Hands and Wrists"
     ]
   },
   {
     "name": "Wall Stork",
     "description": "Strengthens independent movement of the hips and balances the pelvis, torso and lower extremity.",
-    "own_it": "Do 3 minutes on each leg.",
+    "images": [
+      "WallStork.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Do 3 minutes on each leg.",
     "timers": [
       3
     ],
-    "instructions": [
+    "howTo": [
       "Stand with your back against the wall with your feet pointed straight and hip width apart.",
       "Your heels, hips, upper back and head should be against the wall.",
       "Place one foot upon a chair in front of you.",
@@ -450,70 +410,62 @@
       "Hold this position as directed on your menu.",
       "Do not allow the leg/hip of the down leg to shift out to the side.",
       "Switch legs and repeat."
-    ],
-    "images": [
-      "WallStork.jpg"
-    ],
-    "areas": [
-      "Knees with Internal Femur Rotation",
-      "Shoulders with Pain"
     ]
   },
   {
     "name": "Lying Supine",
     "description": "Helps to improve joint position and balance throughout the kinetic chain.",
-    "own_it": "Hold for 3 to 5 minutes.",
+    "images": [
+      "LyingSupine.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Hold for 3 to 5 minutes.",
     "timers": [
       3,
       4,
       5
     ],
-    "instructions": [
+    "howTo": [
       "Lie on your back with both legs straight and flat on the floor",
       "Place a pillow or block between your ankles/feet.",
       "Flex your toes back toward your hips bending at the ankle joint.",
       "Keep gentle pressure along the block",
       "Try to keep your upper body relaxed with arms at 45 degree angles to your body, palms up",
       "Tighten thigh muscles"
-    ],
-    "images": [
-      "LyingSupine.jpg"
-    ],
-    "areas": [
-      "Knees with Internal Femur Rotation",
-      "Back - Lumbar Pain/Herniated Discs"
     ]
   },
   {
     "name": "Modified Floor Block",
     "description": "Coordinates shoulder, torso and pelvic movement.",
-    "own_it": "Hold for 6 minutes.",
+    "images": [
+      "ModFloorBlock.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Hold for 6 minutes.",
     "timers": [
       6
     ],
-    "instructions": [
+    "howTo": [
       "Lie on your stomach with your forehead on the floor",
       "Your feet should be pigeon-toed and your buttocks relaxed",
       "Elevate your bent arms 4 to 9 inches by placing your forearms and elbows on blocks",
       "Breathe and relax your upper body",
       "Hold as directed on your menu"
-    ],
-    "images": [
-      "ModFloorBlock.jpg"
-    ],
-    "areas": [
-      "Knees with Internal Femur Rotation",
-      "Back - Lumbar Pain/Herniated Discs"
     ]
   },
   {
     "name": "Knee-Pillow Squeezes in Static Back",
     "description": "Helps to balance pelvis and torso to allow proper movement of the hip and proper rotation of the femur.",
-    "own_it": "Hold static back for 3 minutes then do 3 sets of 10 repitions of knee pillow squeezes.",
+    "images": [
+      "KneeSqueezeStaticBack1.jpg",
+      "KneeSqueezeStaticBack2.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Hold static back for 3 minutes then do 3 sets of 10 repitions of knee pillow squeezes.",
     "timers": [
       3
     ],
-    "instructions": [
+    "howTo": [
       "Lie on your back with your legs up over a block or chair.",
       "Place a pillow (something with some stiffness) between your knees (about 6 inches apart).",
       "Place your arms out to the sides at 45 degrees from your body with palms up.",
@@ -521,46 +473,39 @@
       "Gently squeeze your knees (inner thigh muscles) into the pillow, then release.",
       "Try not to contract your stomach/abdominal muscles while squeezing.",
       "Repeat as directed on your menu"
-    ],
-    "images": [
-      "KneeSqueezeStaticBack1.jpg",
-      "KneeSqueezeStaticBack2.jpg"
-    ],
-    "areas": [
-      "Hips Pelvis (no Pain)",
-      "Back - Lumbar Pain/Herniated Discs"
     ]
   },
   {
     "name": "Hooklying Rocking Chair",
     "description": "Improves range of motion in the ankle and coordinates the movement of the entire lower extremity.",
-    "own_it": "Do 3 sets of 10 repetitions.",
+    "images": [
+      "HooklyingRockingChair1.jpg",
+      "HooklyingRockingChair2.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Do 3 sets of 10 repetitions.",
     "timers": [],
-    "instructions": [
+    "howTo": [
       "Lie on your back with your knees bent and your feet flat on the floor pointed straight ahead.",
       "Your arms should be out to the sides at a 45 degree angle, palms up.",
       "Place a pillow between your knees and keep light pressure against it throughout the e-cise .",
       "Keep your upper body relaxed.",
       "Roll both feet forward onto the ball of each foot (raising the heels off the ground), then roll both feet back onto the heel of each foot (raising the toes off the ground) .",
       "Repeat as directed on your menu."
-    ],
-    "images": [
-      "HooklyingRockingChair1.jpg",
-      "HooklyingRockingChair2.jpg"
-    ],
-    "areas": [
-      "Hips Pelvis (no Pain)",
-      "Hips Pelvis (with Pain)"
     ]
   },
   {
     "name": "Hip Lifts",
     "description": "Helps to reduce pelvic disparity and to balance femur and torso position.",
-    "own_it": "Do 1 minute on each side.",
+    "images": [
+      "HipLifts.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Do 1 minute on each side.",
     "timers": [
       1
     ],
-    "instructions": [
+    "howTo": [
       "Lie on your back with your knees bent.",
       "Arms out to your sides at 45 degrees, palms up.",
       "Cross the ankle of one foot over to just above the knee of the other leg.",
@@ -569,41 +514,37 @@
       "Use your hip muscles to press the knee forward.",
       "Do not let the hips shift, maintain the external rotation of the thigh.",
       "Switch legs and repeat as directed on your menu."
-    ],
-    "images": [
-      "HipLifts.jpg"
-    ],
-    "areas": [
-      "Hips Pelvis (no Pain)"
     ]
   },
   {
     "name": "Pelvic Tilts",
     "description": "Coordinates movement of the lower spine and pelvis.",
-    "own_it": "Do 1 set of 10 repetitions.",
-    "timers": [],
-    "instructions": [
-      "Lie on your back with your knees bent. Make sure your hips, knees and feet are aligned.",
-      "Roll your hips backward to flatten your back to the floor and then roll them forward to arch your low back. Remember to relax your upper back.",
-      "REPEAT"
-    ],
     "images": [
       "PelvicTilts1.jpg",
       "PelvicTilts2.jpg"
     ],
-    "areas": [
-      "Hips Pelvis (no Pain)",
-      "Hips Pelvis (with Pain)"
+    "tags": [],
+    "ownIt": "Do 1 set of 10 repetitions.",
+    "timers": [],
+    "howTo": [
+      "Lie on your back with your knees bent. Make sure your hips, knees and feet are aligned.",
+      "Roll your hips backward to flatten your back to the floor and then roll them forward to arch your low back. Remember to relax your upper back.",
+      "REPEAT"
     ]
   },
   {
     "name": "Floor Block",
     "description": "Coordinates movement of the humerus and scapula and helps balance the torso and spine.",
-    "own_it": "Hold for 1 minute in each position.",
+    "images": [
+      "FloorBlock1.jpg",
+      "FloorBlock2.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Hold for 1 minute in each position.",
     "timers": [
       1
     ],
-    "instructions": [
+    "howTo": [
       "Lie on your stomach with your forehead and nose flat on the floor",
       "The tops of your feet should be on the floor, with your big toes touching and your heels dropped out to the sides",
       "Place your forearms on 6 inch blocks directly above your shoulders",
@@ -615,22 +556,19 @@
       "For the second position keep your arms on the blocks and slide the blocks out to a 45 degree angle, rotate your shoulders outward and hold as directed.",
       "For the last position slide your arms and blocks out to a 90 degree angle, rotate your shoulders outward and hold as directed.",
       "Do each position once for 1 minute unless otherwise noted."
-    ],
-    "images": [
-      "FloorBlock1.jpg",
-      "FloorBlock2.jpg"
-    ],
-    "areas": [
-      "Hips Pelvis (no Pain)",
-      "Back - Thoracic Back Pain"
     ]
   },
   {
     "name": "Active Wishbone",
     "description": "Reduces hip disparities and balances the pelvis and torso.",
-    "own_it": "Do 3 sets of 10 repetitions.",
+    "images": [
+      "ActiveWishbone1.jpg",
+      "ActiveWishbone2.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Do 3 sets of 10 repetitions.",
     "timers": [],
-    "instructions": [
+    "howTo": [
       "Lie on your stomach in the Modified Floor Block position.",
       "Your feet should be pigeon-toed and your buttocks relaxed.",
       "Elevate your bent arms 4 to 9 inches by placing your forearms and elbows on blocks.",
@@ -638,23 +576,20 @@
       "Bend both knees to about 90 degrees and flex your toes down toward the floor.",
       "Press and release your ankles/feet into the pillow.",
       "Repeat as directed on your menu."
-    ],
-    "images": [
-      "ActiveWishbone1.jpg",
-      "ActiveWishbone2.jpg"
-    ],
-    "areas": [
-      "Hips Pelvis (no Pain)"
     ]
   },
   {
     "name": "Kneeling Counter Stretch",
     "description": "Allows for symmetric spinal extension and balances the hips and shoulders from side to side.",
-    "own_it": "Hold for 1 minute.",
+    "images": [
+      "KneelCounterStretch.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Hold for 1 minute.",
     "timers": [
       1
     ],
-    "instructions": [
+    "howTo": [
       "Kneel down and place your hands on a chair or block in front of you",
       "Back your knees away from the chair, allowing your upper body to drop through your arms",
       "Before you drop your head between your arms, your hips should be ahead of your knees",
@@ -662,66 +597,59 @@
       "You should feel tightness between your shoulder blades",
       "If this puts too much pressure on your shoulder joints, rest your forearms instead of your hands on the chair",
       "Hold as directed on your menu"
-    ],
-    "images": [
-      "KneelCounterStretch.jpg"
-    ],
-    "areas": [
-      "Hips Pelvis (no Pain)"
     ]
   },
   {
     "name": "Gravity Drop",
     "description": "Balances the rotation in the lower extremity and aligns the load joints.",
-    "own_it": "Hold for 3 minutes.",
+    "images": [
+      "GravityDrop1.jpg",
+      "GravityDrop2.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Hold for 3 minutes.",
     "timers": [
       3
     ],
-    "instructions": [
+    "howTo": [
       "Wearing rubber soled shoes for traction (tennis shoes, etc.) stand on a step or stairway as though you were climbing upward. Feet are parallel, and hip-width apart.",
       "With one hand or both, hold onto railing or other object for support.",
       "Edge your feet backward until the heels are off the stairs and your are hanging onto the stair with the balls of your feet.",
       "Make sure feet remain pointed straight ahead. Let the weight of your body drop your heels off the stair.",
       "You will feel a great stretch in your low leg musculature. The key is to keep your hips over your heels and your shoulders in line with them also.",
       "Hold."
-    ],
-    "images": [
-      "GravityDrop1.jpg",
-      "GravityDrop2.jpg"
-    ],
-    "areas": [
-      "Hips Pelvis (no Pain)"
     ]
   },
   {
     "name": "Hanging",
     "description": "Elongates the muscles along the posterior side of the body, which often become tight and imbalanced from a lifestyle with too much sitting.",
-    "own_it": "Hold for 1 minute.",
-    "timers": [
-      1
-    ],
-    "instructions": [
-      "Stand with your feet pointed straight ahead.",
-      "Bend over to touch your toes and just hang there.",
-      "Drop your head and try to concentrate on relaxing your upper back. Do NOT bend your knees and do NOT bounce.",
-      "HOLD for the desired amount of time."
-    ],
     "images": [
       "Hanging1.jpg",
       "Hanging2.jpg"
     ],
-    "areas": [
-      "Hips Pelvis (with Pain)",
-      "Elbows",
-      "Hands and Wrists"
+    "tags": [],
+    "ownIt": "Hold for 1 minute.",
+    "timers": [
+      1
+    ],
+    "howTo": [
+      "Stand with your feet pointed straight ahead.",
+      "Bend over to touch your toes and just hang there.",
+      "Drop your head and try to concentrate on relaxing your upper back. Do NOT bend your knees and do NOT bounce.",
+      "HOLD for the desired amount of time."
     ]
   },
   {
     "name": "Unilateral Supine Femur Rotations",
     "description": "Increases femur rotation and coordinates action of the major movers in the hips, pelvis and lumbar spine.",
-    "own_it": "Do 2 sets of 10 repetitions for each leg.",
+    "images": [
+      "UniSupineFemurRotations1.jpg",
+      "UniSupineFemurRotations2.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Do 2 sets of 10 repetitions for each leg.",
     "timers": [],
-    "instructions": [
+    "howTo": [
       "Lie on your back with your knees bent, arms out to sides at 45 degrees with palms facing up.",
       "Straighten one leg out while keeping the other leg bent.",
       "On the straight leg, tighten your thigh and pull your toes back and HOLD.",
@@ -729,41 +657,34 @@
       "DO NOT rotate just the foot - the entire leg should be moving in and out while keeping the thigh tight and toes pulled back.",
       "Be sure to relax your upper body.",
       "Switch legs and repeat as directed on your menu."
-    ],
-    "images": [
-      "UniSupineFemurRotations1.jpg",
-      "UniSupineFemurRotations2.jpg"
-    ],
-    "areas": [
-      "Hips Pelvis (with Pain)"
     ]
   },
   {
     "name": "Sitting Knee Pillow Squeezes",
     "description": "Strengthens hip adductors and reduces disparity by placing balanced and systematic demand on the pelvis.",
-    "own_it": "Do 3 sets of 10 repetitions.",
-    "timers": [],
-    "instructions": [
-      "Sit in a chair with a pillow between your knees and your pelvis rolled forward to place an arch in your lower back.",
-      "Keep your feet pointed straight ahead and your upper body relaxed.",
-      "Squeeze and release the pillow between your knees and remember to keep the arch in your low back. Remember to keep your feet pointed straight ahead."
-    ],
     "images": [
       "SitKneeSqueeze1.jpg",
       "SitKneeSqueeze2.jpg"
     ],
-    "areas": [
-      "Back - Lumbar Pain/Herniated Discs",
-      "Shoulders No Pain but with Motion Restrictions",
-      "Necks"
+    "tags": [],
+    "ownIt": "Do 3 sets of 10 repetitions.",
+    "timers": [],
+    "howTo": [
+      "Sit in a chair with a pillow between your knees and your pelvis rolled forward to place an arch in your lower back.",
+      "Keep your feet pointed straight ahead and your upper body relaxed.",
+      "Squeeze and release the pillow between your knees and remember to keep the arch in your low back. Remember to keep your feet pointed straight ahead."
     ]
   },
   {
     "name": "Reverse Presses",
     "description": "Improves scapula mobility and reduces compensation in the thoracic spine.",
-    "own_it": "Do 15 times, 3 sets.",
+    "images": [
+      "ReversePresses.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Do 15 times, 3 sets.",
     "timers": [],
-    "instructions": [
+    "howTo": [
       "Lie on your back with your legs up over a block or chair.",
       "Relax your legs, back and stomach.",
       "Place your arms in a bent position directly out from your shoulders.",
@@ -771,46 +692,40 @@
       "Now squeeze your shoulder blades down and together and then release.",
       "Try to relax your stomach muscles and do NOT try just to push your elbows into the floor - focus on the squeezing and releasing of your shoulder blade muscles.",
       "Repeat as directed on your menu."
-    ],
-    "images": [
-      "ReversePresses.jpg"
-    ],
-    "areas": [
-      "Back - Thoracic Back Pain",
-      "Shoulders with Pain"
     ]
   },
   {
     "name": "Pullovers",
     "description": "Improves shoulder mobility and reduces compensation in the thoracic spine.",
-    "own_it": "Do 15 times, 3 sets.",
+    "images": [
+      "Pullovers1.jpg",
+      "Pullovers2.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Do 15 times, 3 sets.",
     "timers": [],
-    "instructions": [
+    "howTo": [
       "Lie on your back with your legs up over a large block or chair, knees bent at 90 degrees.",
       "There should be a small pillow or block placed directly above your head at arms length.",
       "Relax your legs, lower back and stomach.",
       "Reach arms straight up above your chest, elbows locked and hands clasped together.",
       "Now lower your hands down to the floor, above your head.",
       "Return your arms to the starting position and repeat as directed on your menu."
-    ],
-    "images": [
-      "Pullovers1.jpg",
-      "Pullovers2.jpg"
-    ],
-    "areas": [
-      "Back - Thoracic Back Pain",
-      "Headaches"
     ]
   },
   {
     "name": "Squat",
     "description": "Properly recruits the major movers of the lower body and pelvis while reducing upper body compensation.",
-    "own_it": "Hold for 1 or 2 minutes.",
+    "images": [
+      "Squat.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Hold for 1 or 2 minutes.",
     "timers": [
       1,
       2
     ],
-    "instructions": [
+    "howTo": [
       "Stand facing something about chest high that you can hang onto and will support your weight i.e. door handles, a kitchen sink, a pole, etc.",
       "Your feet should be parallel and 5 to 6 inches apart",
       "Hold onto the object with both hands",
@@ -820,21 +735,19 @@
       "Keep your upper body as vertical as possible",
       "Keep your knees in line with your feet",
       "Hold as directed on your menu"
-    ],
-    "images": [
-      "Squat.jpg"
-    ],
-    "areas": [
-      "Back - Thoracic Back Pain",
-      "Shoulders No Pain but with Motion Restrictions"
     ]
   },
   {
     "name": "Three Posistion Toe Raises",
     "description": "Coordinates and balances the motion of the load joints and various rotational demands on the lower extremity.",
-    "own_it": "Do 2 sets of 10 toe raises in each position.",
+    "images": [
+      "ThreePosToeRaises1.jpg",
+      "ThreePosToeRaises2.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Do 2 sets of 10 toe raises in each position.",
     "timers": [],
-    "instructions": [
+    "howTo": [
       "Stand with your body aligned straight up and down, with your hips directly over your heels.",
       "Hold onto a doorjam, keeping your arms straight. Make sure your hips don't slide forward as you do the repetitions.",
       "For the first set, point your toes straight ahead.",
@@ -845,25 +758,23 @@
       "Repeat steps 3 and 4 as directed on your menu.",
       "For the third set, point your toes inward so your big toes are touching.",
       "Repeat the entire sequence for the sugggested number of sets."
-    ],
-    "images": [
-      "ThreePosToeRaises1.jpg",
-      "ThreePosToeRaises2.jpg"
-    ],
-    "areas": [
-      "Shoulders with Pain"
     ]
   },
   {
     "name": "Sitting Floor",
     "description": "Promotes thoracic extension and upper body balance while eliminating rotattion in your lower extremities.",
-    "own_it": "Hold 4 to 6 minutes.",
+    "images": [
+      "SittingFloor1.jpg",
+      "SittingFloor2.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Hold 4 to 6 minutes.",
     "timers": [
       4,
       5,
       6
     ],
-    "instructions": [
+    "howTo": [
       "Sit against a wall with your legs straight out in front of you.",
       "Your buttocks and upper back should be against the wall the entire time.",
       "Squeeze your shoulder blades together and hold.",
@@ -871,76 +782,67 @@
       "Tighten the thighs and flex the feet back so that your toes are pointing back toward you.",
       "The keys are to keep your blades pulled together, your thighs tight and your feet flexed back.",
       "Hold as directed on your menu."
-    ],
-    "images": [
-      "SittingFloor1.jpg",
-      "SittingFloor2.jpg"
-    ],
-    "areas": [
-      "Shoulders No Pain but with Motion Restrictions"
     ]
   },
   {
     "name": "Seated Arm Circles",
     "description": "Strengthens the muscles of the upper back and shoulders and balances the top of the kinetic chain and pelvis.",
-    "own_it": "Do 50 with palms down and 50 with palms up.",
+    "images": [
+      "ArmCircles1.jpg",
+      "ArmCircles2.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Do 50 with palms down and 50 with palms up.",
     "timers": [],
-    "instructions": [
+    "howTo": [
       "Sit on a chair or bench with your head up and with your feet pointed straight ahead. Place your finger tips into the pad of each hand and point your thumb straight out.",
       "This hand position is imperative to the exercise being done correctly. It is called the \"golfer's grip\".",
       "Squeeze your shoulder blades together backwards and bring your arms out to your sides at shoulder level.",
       "With your palms facing downward, circle up and forward for the repetitions specified. With your palms facing upward, circle up and back for the desired repetitions.",
       "Remember to keep your feet straight and your shoulder blades squeezed together."
-    ],
-    "images": [
-      "ArmCircles1.jpg",
-      "ArmCircles2.jpg"
-    ],
-    "areas": [
-      "Shoulders No Pain but with Motion Restrictions"
     ]
   },
   {
     "name": "Hero's Pose",
     "description": "Promotes symmetric pelvic and torso position.",
-    "own_it": "Hold for 1 minute.",
-    "timers": [
-      1
-    ],
-    "instructions": [
-      "Kneel down with your knees and ankles together and sit on your heels. If this is too difficult, place a pillow between your ankles and sit on that to raise your butt up from the ankle level.",
-      "Relax your upper body as your roll your hips forward to place the arch into your low back.",
-      "Hold."
-    ],
     "images": [
       "HeroPose1.jpg",
       "HeroPose2.jpg"
     ],
-    "areas": [
-      "Necks"
+    "tags": [],
+    "ownIt": "Hold for 1 minute.",
+    "timers": [
+      1
+    ],
+    "howTo": [
+      "Kneel down with your knees and ankles together and sit on your heels. If this is too difficult, place a pillow between your ankles and sit on that to raise your butt up from the ankle level.",
+      "Relax your upper body as your roll your hips forward to place the arch into your low back.",
+      "Hold."
     ]
   },
   {
     "name": "Slant Board Ankle Sequence",
     "description": "Uses the ankle joint to strengthen the muscles of the pelvis, activating the hip flexor so that the vertical posture facilitates dynamic tension from he front to the back of the body.",
-    "own_it": "Read the book.",
-    "timers": [],
-    "instructions": [
-      "Read the book if you ant to try this one"
-    ],
     "images": [
       "SlantBoardAnkle.png"
     ],
-    "areas": [
-      "Headaches"
+    "tags": [],
+    "ownIt": "Read the book.",
+    "timers": [],
+    "howTo": [
+      "Read the book if you ant to try this one"
     ]
   },
   {
     "name": "Standing Chest Openers, Unilateral",
     "description": "Improves humerus and scapula range of motion and balances shoulder motion with motion of the thoracic spine.",
-    "own_it": "Do 2 sets of 10 repetitions on each side.",
+    "images": [
+      "UniStandingChestOpeners.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Do 2 sets of 10 repetitions on each side.",
     "timers": [],
-    "instructions": [
+    "howTo": [
       "Stand sideways to a wall an arm's length away from it with your feet pointed straight and hip width apart.",
       "Extend you inside arm and place your palm flat on the wall with your fingers spread apart.",
       "Your outside arm is hanging down at your side.",
@@ -949,43 +851,40 @@
       "Your stomach should be relaxed.",
       "Keep your hand flat against the wall throughout the movement.",
       "Turn so your opposite side is facing the wall and repeat."
-    ],
-    "images": [
-      "UniStandingChestOpeners.jpg"
-    ],
-    "areas": [
-      "Elbows"
     ]
   },
   {
     "name": "Standing Chest Openers, Bilateral",
     "description": "Improves scapula and shoulder range of motion and reduces thoracic spine and torso imbalance.",
-    "own_it": "Do 2 sets of 10 repetitions.",
+    "images": [
+      "BiStandingChest Openers1.jpg",
+      "BiStandingChest Openers2.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Do 2 sets of 10 repetitions.",
     "timers": [],
-    "instructions": [
+    "howTo": [
       "Stand facing a wall an arm's length away from it with your feet pointed straight and hip width apart.",
       "Place your palms flat on the wall with your fingers spread apart.",
       "Keeping your arms straight, rotate your arms in and out from the shoulders.",
       "Do not bend your elbows, do not raise your shoulders and do not move your hands.",
       "Your stomach should be relaxed.",
       "Repeat as directed on your menu"
-    ],
-    "images": [
-      "BiStandingChest Openers1.jpg",
-      "BiStandingChest Openers2.jpg"
-    ],
-    "areas": [
-      "Elbows"
     ]
   },
   {
     "name": "Wall Clock",
     "description": "Improves function of the scapula. The shoulder blades should move up and down, back and forth, clockwise and counter-clockwise. When they don't, much of the dynamic interaction within the torso is lost.",
-    "own_it": "Hold each clock position for 1 minute.",
+    "images": [
+      "WallClock1.jpg",
+      "WallClock2.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Hold each clock position for 1 minute.",
     "timers": [
       1
     ],
-    "instructions": [
+    "howTo": [
       "Stand facing a wall with toes pointed inward (pigeon-toed) and your forehead against the wall.",
       "Position 1: Raise your arms directly overhead.",
       "Relax your stomach to allow your hips to tilt forward.",
@@ -999,76 +898,62 @@
       "Repeat the outward rotation with your arms from the shoulders.",
       "Hold for 1 minute (or as directed on your menu).",
       "Repeat the entire sequence as directed on your menu."
-    ],
-    "images": [
-      "WallClock1.jpg",
-      "WallClock2.jpg"
-    ],
-    "areas": [
-      "Elbows",
-      "Hands and Wrists"
     ]
   },
   {
     "name": "Shoulder Shrugs",
     "description": "Promotes proper position of the scapula and throacic extension, while reducing imbalance in the torso and spine.",
-    "own_it": "Do 2 sets of 10 repetitions.",
+    "images": [
+      "ShoulderShrugs1.jpg",
+      "ShoulderShrugs2.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Do 2 sets of 10 repetitions.",
     "timers": [],
-    "instructions": [
+    "howTo": [
       "Stand with your back to a wall, feet pointing straight ahead, against the wall and hip width apart, arms hanging down at your sides.",
       "Your hips, upper back and head should be against the wall.",
       "Squeeze your shoulder blades together and hold them together while you shrug your shoulders up and down.",
       "Keeping your shoulder blades together is key for this e-cise.",
       "You should hear your upper back and shoulder blades gliding on the wall as the shoulders go up and down.",
       "Continue as directed on your menu."
-    ],
-    "images": [
-      "ShoulderShrugs1.jpg",
-      "ShoulderShrugs2.jpg"
-    ],
-    "areas": [
-      "Hands and Wrists"
     ]
   },
   {
     "name": "Shoulder Rolls",
     "description": "Promotes proper position and movement of the scapula and shoulder and reduces imblance in the torso and spine.",
-    "own_it": "Do 2 sets of 10 repetitions in each direction.",
+    "images": [
+      "ShoulderRolls1.jpg",
+      "ShoulderRolls2.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Do 2 sets of 10 repetitions in each direction.",
     "timers": [],
-    "instructions": [
+    "howTo": [
       "Stand with your feet pointing straight ahead and hip width apart.",
       "Your arms are relaxed at your sides.",
       "Circle your shoulders forward by pulling your shoulders back then up and then forward.",
       "Continue as directed.",
       "Now circle backward by raising your shoulders then circling them back and then down.",
       "Repeat in both directions as directed on your menu."
-    ],
-    "images": [
-      "ShoulderRolls1.jpg",
-      "ShoulderRolls2.jpg"
-    ],
-    "areas": [
-      "Hands and Wrists"
     ]
   },
   {
     "name": "Wall Elbow Curls",
     "description": "Promotes proper positioning of the load joints and synchronizes scapula movement with the thoracic extension and flexion.",
-    "own_it": "Do 1 set of 25 repetitions.",
+    "images": [
+      "WallElbowCurls1.jpg",
+      "WallElbowCurls2.jpg"
+    ],
+    "tags": [],
+    "ownIt": "Do 1 set of 25 repetitions.",
     "timers": [],
-    "instructions": [
+    "howTo": [
       "Stand against a wall with your feet pointed straight ahead.",
       "Keep your heels, hips, upper back and head against the wall.",
       "Place your knuckles against your temples with your thumbs pointed down to your shoulders.",
       "Open your elbows so that they are against the wall and close your elbows together in front of your face.",
       "REPEAT"
-    ],
-    "images": [
-      "WallElbowCurls1.jpg",
-      "WallElbowCurls2.jpg"
-    ],
-    "areas": [
-      "Elbows"
     ]
   }
 ]

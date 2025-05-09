@@ -2,24 +2,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Exercise Timer (Resets Correctly)</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exercise Menu</title>
   <style>
-    body { font-family: sans-serif; padding: 20px; }
-    .card { border: 1px solid #ccc; padding: 10px; margin: 10px 0; border-radius: 6px; }
-    .timer-btn { padding: 5px 10px; margin-top: 10px; }
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 1rem;
+      background: #f5f5f5;
+    }
+    .filter-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .filter-buttons button {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      background: #007acc;
+      color: white;
+      cursor: pointer;
+    }
+    .filter-buttons button.active {
+      background: #005a9c;
+    }
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    .card {
+      background: white;
+      border-radius: 6px;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+    .timer-btn {
+      padding: 0.4rem 0.8rem;
+      margin: 0.2rem;
+      font-size: 0.9rem;
+    }
+    .popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+    .popup-content {
+      background: white;
+      padding: 1rem;
+      border-radius: 6px;
+      max-width: 90%;
+      max-height: 80%;
+      overflow-y: auto;
+    }
+    .popup-content ul {
+      padding-left: 1.2rem;
+    }
+    .popup-content button {
+      margin-top: 1rem;
+    }
   </style>
 </head>
 <body>
   <h1>Exercise Menu</h1>
+  <div class="filter-buttons" id="filters"></div>
+  <div class="grid" id="grid"></div>
 
-  <div class="card">
-    <h2>Sample Exercise</h2>
-    <p>No description yet.</p>
-    <button class="timer-btn" data-minutes="1" data-id="ex-1-min-1">Start 1 min</button>
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2 id="popup-title"></h2>
+      <ul id="popup-list"></ul>
+      <button onclick="document.getElementById('popup').style.display='none'">Close</button>
+    </div>
   </div>
 
+  <audio id="timerSound" src="timer_end.mp3" preload="auto"></audio>
   <script>
+    const popup = document.getElementById('popup');
+    const popupTitle = document.getElementById('popup-title');
+    const popupList = document.getElementById('popup-list');
+    const timerSound = document.getElementById('timerSound');
+
     const activeTimer = {
       id: null,
       interval: null,
@@ -27,59 +104,125 @@
       originalLabel: null
     };
 
-    document.querySelectorAll('.timer-btn').forEach(function (button) {
-      button.addEventListener('click', function () {
-        const minutes = parseInt(button.dataset.minutes);
-        const thisId = button.dataset.id;
+    let currentFilter = 'All';
 
-        console.log("Button clicked:", thisId);
-        console.log("Active timer ID:", activeTimer.id);
+    fetch('exercises.json')
+      .then(res => res.json())
+      .then(data => {
+        const allTags = new Set();
+        data.forEach(ex => ex.tags.forEach(tag => allTags.add(tag)));
+        const filters = ['All', ...Array.from(allTags)];
+        const filterDiv = document.getElementById('filters');
+        filters.forEach(tag => {
+          const btn = document.createElement('button');
+          btn.textContent = tag;
+          if (tag === 'All') btn.classList.add('active');
+          btn.onclick = () => {
+            currentFilter = tag;
+            document.querySelectorAll('.filter-buttons button').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            render(data);
+          };
+          filterDiv.appendChild(btn);
+        });
 
-        if (thisId === activeTimer.id) {
-          console.log("Resetting timer");
-          clearInterval(activeTimer.interval);
-          activeTimer.button.textContent = activeTimer.originalLabel;
-          activeTimer.id = null;
-          activeTimer.interval = null;
-          activeTimer.button = null;
-          activeTimer.originalLabel = null;
-          return;
+        function render(exercises) {
+          const grid = document.getElementById('grid');
+          grid.innerHTML = '';
+          const showAll = currentFilter === 'All';
+          exercises.filter(ex => showAll || ex.tags.includes(currentFilter)).forEach((ex, i) => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            const title = document.createElement('h3');
+            title.textContent = ex.name;
+            card.appendChild(title);
+
+            ex.images.forEach(src => {
+              const img = document.createElement('img');
+              img.src = src;
+              card.appendChild(img);
+            });
+
+            const desc = document.createElement('p');
+            desc.textContent = ex.description || 'No description yet.';
+            card.appendChild(desc);
+
+            if (!showAll && ex.ownIt) {
+              const own = document.createElement('p');
+              own.innerHTML = '<strong>Own It:</strong> ' + ex.ownIt;
+              card.appendChild(own);
+            }
+
+            if (!showAll && ex.timers.length > 0) {
+              ex.timers.forEach(mins => {
+                const btnId = `ex-${i}-min-${mins}`;
+                const button = document.createElement('button');
+                button.textContent = 'Start ' + mins + ' min';
+                button.className = 'timer-btn';
+                button.dataset.minutes = mins;
+                button.dataset.id = btnId;
+                button.onclick = () => {
+                  const thisId = button.dataset.id;
+                  const minutes = parseInt(button.dataset.minutes);
+                  if (thisId === activeTimer.id) {
+                    clearInterval(activeTimer.interval);
+                    activeTimer.button.textContent = activeTimer.originalLabel;
+                    activeTimer.id = null;
+                    activeTimer.interval = null;
+                    activeTimer.button = null;
+                    activeTimer.originalLabel = null;
+                    return;
+                  }
+                  if (activeTimer.interval) return;
+                  activeTimer.id = thisId;
+                  activeTimer.button = button;
+                  activeTimer.originalLabel = button.textContent;
+                  let remaining = minutes * 60;
+                  button.textContent = Math.floor(remaining / 60) + ':' + (remaining % 60 < 10 ? '0' : '') + (remaining % 60);
+                  activeTimer.interval = setInterval(() => {
+                    remaining--;
+                    if (remaining < 0) {
+                      clearInterval(activeTimer.interval);
+                      activeTimer.button.textContent = activeTimer.originalLabel;
+                      activeTimer.id = null;
+                      activeTimer.interval = null;
+                      activeTimer.button = null;
+                      activeTimer.originalLabel = null;
+                      timerSound.play();
+                      alert("Time's up!");
+                    } else {
+                      const m = Math.floor(remaining / 60);
+                      const s = remaining % 60;
+                      button.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+                    }
+                  }, 1000);
+                };
+                card.appendChild(button);
+              });
+            }
+
+            if (!showAll && ex.howTo && ex.howTo.length > 0) {
+              const doIt = document.createElement('button');
+              doIt.textContent = 'Do it';
+              doIt.onclick = () => {
+                popupTitle.textContent = ex.name;
+                popupList.innerHTML = '';
+                ex.howTo.forEach(step => {
+                  const li = document.createElement('li');
+                  li.textContent = step;
+                  popupList.appendChild(li);
+                });
+                popup.style.display = 'flex';
+              };
+              card.appendChild(doIt);
+            }
+
+            grid.appendChild(card);
+          });
         }
 
-        if (activeTimer.interval) {
-          console.log("Another timer is already running.");
-          return;
-        }
-
-        console.log("Starting new timer");
-        const original = button.textContent;
-        let remaining = minutes * 60;
-
-        button.textContent = Math.floor(remaining / 60) + ':' + (remaining % 60 < 10 ? '0' : '') + (remaining % 60);
-
-        activeTimer.id = thisId;
-        activeTimer.interval = null;
-        activeTimer.button = button;
-        activeTimer.originalLabel = original;
-
-        activeTimer.interval = setInterval(function () {
-          remaining--;
-          if (remaining < 0) {
-            clearInterval(activeTimer.interval);
-            activeTimer.button.textContent = activeTimer.originalLabel;
-            activeTimer.id = null;
-            activeTimer.interval = null;
-            activeTimer.button = null;
-            activeTimer.originalLabel = null;
-            alert("Time's up!");
-          } else {
-            const m = Math.floor(remaining / 60);
-            const s = remaining % 60;
-            button.textContent = m + ':' + (s < 10 ? '0' : '') + s;
-          }
-        }, 1000);
+        render(data);
       });
-    });
   </script>
 </body>
 </html>
