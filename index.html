@@ -39,7 +39,8 @@
         let currentFilter = null;
         const activeTimer = {
   id: null,
-  interval: null
+  interval: null,
+  originalLabel: null
 };
 
         function openModal(content) {
@@ -95,29 +96,31 @@
         const minutes = parseInt(button.dataset.minutes);
         const thisId = button.dataset.id;
 
-        // If this button's id matches the active one, reset
+        // If this is the currently running timer, reset it
         if (thisId === activeTimer.id) {
           clearInterval(activeTimer.interval);
-          const btn = document.querySelector(`[data-id="${activeTimer.id}"]`);
+          const btn = document.querySelector(`[data-id="${thisId}"]`);
           if (btn) {
-            btn.textContent = `Start ${minutes} min`;
+            btn.textContent = activeTimer.originalLabel || `Start ${minutes} min`;
             btn.disabled = false;
           }
           activeTimer.id = null;
           activeTimer.interval = null;
+          activeTimer.originalLabel = null;
           return;
         }
 
-        // If another timer is running, ignore
+        // If a different timer is running, ignore
         if (activeTimer.interval) return;
 
         // Start a new timer
-        const original = `Start ${minutes} min`;
+        const original = button.textContent;
         let remaining = minutes * 60;
         button.disabled = true;
         button.textContent = `${Math.floor(remaining / 60)}:${(remaining % 60).toString().padStart(2, '0')}`;
 
         activeTimer.id = thisId;
+        activeTimer.originalLabel = original;
 
         activeTimer.interval = setInterval(() => {
           remaining--;
@@ -130,6 +133,7 @@
             }
             activeTimer.id = null;
             activeTimer.interval = null;
+            activeTimer.originalLabel = null;
             timerSound.play();
             alert("Time's up!");
           } else {
