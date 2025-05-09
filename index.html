@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Exercise Timer Minimal</title>
+  <title>Exercise Timer (Reset Working)</title>
   <style>
     body { font-family: sans-serif; padding: 20px; }
     .card { border: 1px solid #ccc; padding: 10px; margin: 10px 0; border-radius: 6px; }
@@ -40,7 +40,6 @@
           const btn = document.querySelector('[data-id="' + thisId + '"]');
           if (btn) {
             btn.textContent = activeTimer.originalLabel || ('Start ' + minutes + ' min');
-            btn.disabled = false;
           }
           activeTimer.id = null;
           activeTimer.interval = null;
@@ -56,7 +55,6 @@
         console.log("Starting new timer");
         const original = button.textContent;
         let remaining = minutes * 60;
-        button.disabled = true;
         button.textContent = Math.floor(remaining / 60) + ':' + (remaining % 60 < 10 ? '0' : '') + (remaining % 60);
 
         activeTimer.id = thisId;
@@ -69,7 +67,6 @@
             const btn = document.querySelector('[data-id="' + thisId + '"]');
             if (btn) {
               btn.textContent = original;
-              btn.disabled = false;
             }
             activeTimer.id = null;
             activeTimer.interval = null;
