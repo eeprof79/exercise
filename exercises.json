@@ -3,8 +3,8 @@
     "name": "Sitting Heel Raises with Block",
     "description": "Helps to coordinate movement of the entire lower extremity.",
     "images": [
-      "SittingHeelBlock1.jpg",
-      "SittingHeelBlock2.jpg"
+      "images/SittingHeelBlock1.jpg",
+      "images/SittingHeelBlock2.jpg"
     ],
     "tags": [
       "Feet",
@@ -24,7 +24,7 @@
     "name": "Short foot",
     "description": "Mimics proper foot and ankle movement during gait and starts to take away compensations in the load joints.",
     "images": [
-      "ShortFoot.jpg"
+      "images/ShortFoot.jpg"
     ],
     "tags": [
       "Feet"
@@ -43,7 +43,7 @@
     "name": "Static Back",
     "description": "Settles your hips and back, releasing the compensating muscles that interfere with balance and functional movement.",
     "images": [
-      "StaticBack.jpg"
+      "images/StaticBack.jpg"
     ],
     "tags": [
       "Feet"
@@ -63,8 +63,8 @@
     "name": "Frog",
     "description": "Releases the powerful thigh and groin muscles to allow the pelvis to settle into a neutral position. ",
     "images": [
-      "Frog1.jpg",
-      "Frog2.jpg"
+      "images/Frog1.jpg",
+      "images/Frog2.jpg"
     ],
     "tags": [
       "Feet"
@@ -88,8 +88,8 @@
     "name": "Foot Circles/Point Flexes",
     "description": "Increases ankle mobility and restores balance to the muscles of the lower extremity.",
     "images": [
-      "FootCircles1.jpg",
-      "FootCircles2.jpg"
+      "images/FootCircles1.jpg",
+      "images/FootCircles2.jpg"
     ],
     "tags": [
       "Feet",
@@ -111,8 +111,8 @@
     "name": "Calf/Hamstring Stretch",
     "description": "Restores blalnce to all the muscles from the hip to the foot.",
     "images": [
-      "CalfHamStretch1.jpg",
-      "CalfHamStretch2.jpg"
+      "images/CalfHamStretch1.jpg",
+      "images/CalfHamStretch2.jpg"
     ],
     "tags": [
       "Feet"
@@ -137,7 +137,7 @@
     "name": "Static Extension Position",
     "description": "Improves pelvic and spine imbalance to improve load joint function.",
     "images": [
-      "StaticExt.jpg"
+      "images/StaticExt.jpg"
     ],
     "tags": [
       "Feet",
@@ -162,7 +162,7 @@
     "name": "Air Bench",
     "description": "Puts the hips, knees and ankles simultaneously into flexion while they are under load.",
     "images": [
-      "AirBench.jpg"
+      "images/AirBench.jpg"
     ],
     "tags": [
       "Feet"
@@ -190,8 +190,8 @@
     "name": "Standing Arm Circles",
     "description": "Strengthens the muscles of the upper back and shoulders and balances the top of the kinetic chain and pelvis.",
     "images": [
-      "StandArmCircles1.jpg",
-      "StandArmCircles2.jpg"
+      "images/StandArmCircles1.jpg",
+      "images/StandArmCircles2.jpg"
     ],
     "tags": [
       "Ankle"
@@ -210,8 +210,8 @@
     "name": "Abduction-Adduction with Narrow and Wide Feet",
     "description": "Helps promote femur rotation and reduces imbalance in the pelvis and torso.",
     "images": [
-      "AdAbuct1.jpg",
-      "AdAbuct2.jpg"
+      "images/AdAbuct1.jpg",
+      "images/AdAbuct2.jpg"
     ],
     "tags": [
       "Ankle"
@@ -233,7 +233,7 @@
     "name": "Static Wall",
     "description": "Engages and balances the muscles in the front of the thighs, lower legs and pelvis.",
     "images": [
-      "StaticWall.jpg"
+      "images/StaticWall.jpg"
     ],
     "tags": [
       "Ankle"
@@ -258,8 +258,8 @@
     "name": "Cats and Dogs",
     "description": "Works the hips, spine, shoulders and neck in coordinated flexion-extension.",
     "images": [
-      "CatsDogs1.jpg",
-      "CatsDogs2.jpg"
+      "images/CatsDogs1.jpg",
+      "images/CatsDogs2.jpg"
     ],
     "tags": [
       "Ankle"
@@ -277,8 +277,8 @@
     "name": "Cross Crawling",
     "description": "Promotes proper and coordinated flexion and extension of the hips and shoulders simeltaneously.",
     "images": [
-      "CrossCrawl1.jpg",
-      "CrossCrawl2.jpg"
+      "images/CrossCrawl1.jpg",
+      "images/CrossCrawl2.jpg"
     ],
     "tags": [
       "Ankle"
@@ -296,7 +296,7 @@
     "name": "Flexion Knee Pillow Squeezes",
     "description": "Helps the adductor muscles do their primary assignment, rather than trying to operate as gait muscles.",
     "images": [
-      "FlexKneeSqueezes.jpg"
+      "images/FlexKneeSqueezes.jpg"
     ],
     "tags": [],
     "ownIt": "Do 3 sets of 10 repetitions.",
@@ -311,7 +311,7 @@
     "name": "Standing Quad Stretch",
     "description": "Helps to balance the quadriceps and hamstring muscles to balance pelvis and torso position.",
     "images": [
-      "StandQuadStretch.jpg"
+      "images/StandQuadStretch.jpg"
     ],
     "tags": [],
     "ownIt": "Hold for 1 minute on each side.",
@@ -333,7 +333,7 @@
     "name": "Standing Forward Bend",
     "description": "Allows for coordinated movement on both sides of the trunk and pelvis and balances muscles along the front and back of the body, stabilizing the pelvis.",
     "images": [
-      "StandForwardBend.jpg"
+      "images/StandForwardBend.jpg"
     ],
     "tags": [],
     "ownIt": "Hold this position for 1 minute.",
@@ -355,7 +355,7 @@
     "name": "Progressive Supine Groin",
     "description": "Allows fpr proper flexion and extension of the leg while reducing compensating side-to-side and rotational motions.",
     "images": [
-      "ProgSupineGroin.jpg"
+      "images/ProgSupineGroin.jpg"
     ],
     "tags": [],
     "ownIt": "Hold each position for 3 minutes and repeat on the opposite side.",
@@ -373,7 +373,7 @@
     "name": "Standing Wall with Pillow between Knees",
     "description": "Promotes proper positioning of all load joints.",
     "images": [
-      "StandWallPillow.jpg"
+      "images/StandWallPillow.jpg"
     ],
     "tags": [],
     "ownIt": "Hold for 6 to 8 minutes.",
@@ -393,7 +393,7 @@
     "name": "Wall Stork",
     "description": "Strengthens independent movement of the hips and balances the pelvis, torso and lower extremity.",
     "images": [
-      "WallStork.jpg"
+      "images/WallStork.jpg"
     ],
     "tags": [],
     "ownIt": "Do 3 minutes on each leg.",
@@ -416,7 +416,7 @@
     "name": "Lying Supine",
     "description": "Helps to improve joint position and balance throughout the kinetic chain.",
     "images": [
-      "LyingSupine.jpg"
+      "images/LyingSupine.jpg"
     ],
     "tags": [],
     "ownIt": "Hold for 3 to 5 minutes.",
@@ -438,7 +438,7 @@
     "name": "Modified Floor Block",
     "description": "Coordinates shoulder, torso and pelvic movement.",
     "images": [
-      "ModFloorBlock.jpg"
+      "images/ModFloorBlock.jpg"
     ],
     "tags": [],
     "ownIt": "Hold for 6 minutes.",
@@ -457,8 +457,8 @@
     "name": "Knee-Pillow Squeezes in Static Back",
     "description": "Helps to balance pelvis and torso to allow proper movement of the hip and proper rotation of the femur.",
     "images": [
-      "KneeSqueezeStaticBack1.jpg",
-      "KneeSqueezeStaticBack2.jpg"
+      "images/KneeSqueezeStaticBack1.jpg",
+      "images/KneeSqueezeStaticBack2.jpg"
     ],
     "tags": [],
     "ownIt": "Hold static back for 3 minutes then do 3 sets of 10 repitions of knee pillow squeezes.",
@@ -479,8 +479,8 @@
     "name": "Hooklying Rocking Chair",
     "description": "Improves range of motion in the ankle and coordinates the movement of the entire lower extremity.",
     "images": [
-      "HooklyingRockingChair1.jpg",
-      "HooklyingRockingChair2.jpg"
+      "images/HooklyingRockingChair1.jpg",
+      "images/HooklyingRockingChair2.jpg"
     ],
     "tags": [],
     "ownIt": "Do 3 sets of 10 repetitions.",
@@ -498,7 +498,7 @@
     "name": "Hip Lifts",
     "description": "Helps to reduce pelvic disparity and to balance femur and torso position.",
     "images": [
-      "HipLifts.jpg"
+      "images/HipLifts.jpg"
     ],
     "tags": [],
     "ownIt": "Do 1 minute on each side.",
@@ -520,8 +520,8 @@
     "name": "Pelvic Tilts",
     "description": "Coordinates movement of the lower spine and pelvis.",
     "images": [
-      "PelvicTilts1.jpg",
-      "PelvicTilts2.jpg"
+      "images/PelvicTilts1.jpg",
+      "images/PelvicTilts2.jpg"
     ],
     "tags": [],
     "ownIt": "Do 1 set of 10 repetitions.",
@@ -536,8 +536,8 @@
     "name": "Floor Block",
     "description": "Coordinates movement of the humerus and scapula and helps balance the torso and spine.",
     "images": [
-      "FloorBlock1.jpg",
-      "FloorBlock2.jpg"
+      "images/FloorBlock1.jpg",
+      "images/FloorBlock2.jpg"
     ],
     "tags": [],
     "ownIt": "Hold for 1 minute in each position.",
@@ -562,8 +562,8 @@
     "name": "Active Wishbone",
     "description": "Reduces hip disparities and balances the pelvis and torso.",
     "images": [
-      "ActiveWishbone1.jpg",
-      "ActiveWishbone2.jpg"
+      "images/ActiveWishbone1.jpg",
+      "images/ActiveWishbone2.jpg"
     ],
     "tags": [],
     "ownIt": "Do 3 sets of 10 repetitions.",
@@ -582,7 +582,7 @@
     "name": "Kneeling Counter Stretch",
     "description": "Allows for symmetric spinal extension and balances the hips and shoulders from side to side.",
     "images": [
-      "KneelCounterStretch.jpg"
+      "images/KneelCounterStretch.jpg"
     ],
     "tags": [],
     "ownIt": "Hold for 1 minute.",
@@ -603,8 +603,8 @@
     "name": "Gravity Drop",
     "description": "Balances the rotation in the lower extremity and aligns the load joints.",
     "images": [
-      "GravityDrop1.jpg",
-      "GravityDrop2.jpg"
+      "images/GravityDrop1.jpg",
+      "images/GravityDrop2.jpg"
     ],
     "tags": [],
     "ownIt": "Hold for 3 minutes.",
@@ -624,8 +624,8 @@
     "name": "Hanging",
     "description": "Elongates the muscles along the posterior side of the body, which often become tight and imbalanced from a lifestyle with too much sitting.",
     "images": [
-      "Hanging1.jpg",
-      "Hanging2.jpg"
+      "images/Hanging1.jpg",
+      "images/Hanging2.jpg"
     ],
     "tags": [],
     "ownIt": "Hold for 1 minute.",
@@ -643,8 +643,8 @@
     "name": "Unilateral Supine Femur Rotations",
     "description": "Increases femur rotation and coordinates action of the major movers in the hips, pelvis and lumbar spine.",
     "images": [
-      "UniSupineFemurRotations1.jpg",
-      "UniSupineFemurRotations2.jpg"
+      "images/UniSupineFemurRotations1.jpg",
+      "images/UniSupineFemurRotations2.jpg"
     ],
     "tags": [],
     "ownIt": "Do 2 sets of 10 repetitions for each leg.",
@@ -663,8 +663,8 @@
     "name": "Sitting Knee Pillow Squeezes",
     "description": "Strengthens hip adductors and reduces disparity by placing balanced and systematic demand on the pelvis.",
     "images": [
-      "SitKneeSqueeze1.jpg",
-      "SitKneeSqueeze2.jpg"
+      "images/SitKneeSqueeze1.jpg",
+      "images/SitKneeSqueeze2.jpg"
     ],
     "tags": [],
     "ownIt": "Do 3 sets of 10 repetitions.",
@@ -679,7 +679,7 @@
     "name": "Reverse Presses",
     "description": "Improves scapula mobility and reduces compensation in the thoracic spine.",
     "images": [
-      "ReversePresses.jpg"
+      "images/ReversePresses.jpg"
     ],
     "tags": [],
     "ownIt": "Do 15 times, 3 sets.",
@@ -698,8 +698,8 @@
     "name": "Pullovers",
     "description": "Improves shoulder mobility and reduces compensation in the thoracic spine.",
     "images": [
-      "Pullovers1.jpg",
-      "Pullovers2.jpg"
+      "images/Pullovers1.jpg",
+      "images/Pullovers2.jpg"
     ],
     "tags": [],
     "ownIt": "Do 15 times, 3 sets.",
@@ -717,7 +717,7 @@
     "name": "Squat",
     "description": "Properly recruits the major movers of the lower body and pelvis while reducing upper body compensation.",
     "images": [
-      "Squat.jpg"
+      "images/Squat.jpg"
     ],
     "tags": [],
     "ownIt": "Hold for 1 or 2 minutes.",
@@ -741,8 +741,8 @@
     "name": "Three Posistion Toe Raises",
     "description": "Coordinates and balances the motion of the load joints and various rotational demands on the lower extremity.",
     "images": [
-      "ThreePosToeRaises1.jpg",
-      "ThreePosToeRaises2.jpg"
+      "images/ThreePosToeRaises1.jpg",
+      "images/ThreePosToeRaises2.jpg"
     ],
     "tags": [],
     "ownIt": "Do 2 sets of 10 toe raises in each position.",
@@ -764,8 +764,8 @@
     "name": "Sitting Floor",
     "description": "Promotes thoracic extension and upper body balance while eliminating rotattion in your lower extremities.",
     "images": [
-      "SittingFloor1.jpg",
-      "SittingFloor2.jpg"
+      "images/SittingFloor1.jpg",
+      "images/SittingFloor2.jpg"
     ],
     "tags": [],
     "ownIt": "Hold 4 to 6 minutes.",
@@ -788,8 +788,8 @@
     "name": "Seated Arm Circles",
     "description": "Strengthens the muscles of the upper back and shoulders and balances the top of the kinetic chain and pelvis.",
     "images": [
-      "ArmCircles1.jpg",
-      "ArmCircles2.jpg"
+      "images/ArmCircles1.jpg",
+      "images/ArmCircles2.jpg"
     ],
     "tags": [],
     "ownIt": "Do 50 with palms down and 50 with palms up.",
@@ -806,8 +806,8 @@
     "name": "Hero's Pose",
     "description": "Promotes symmetric pelvic and torso position.",
     "images": [
-      "HeroPose1.jpg",
-      "HeroPose2.jpg"
+      "images/HeroPose1.jpg",
+      "images/HeroPose2.jpg"
     ],
     "tags": [],
     "ownIt": "Hold for 1 minute.",
@@ -824,7 +824,7 @@
     "name": "Slant Board Ankle Sequence",
     "description": "Uses the ankle joint to strengthen the muscles of the pelvis, activating the hip flexor so that the vertical posture facilitates dynamic tension from he front to the back of the body.",
     "images": [
-      "SlantBoardAnkle.png"
+      "images/SlantBoardAnkle.png"
     ],
     "tags": [],
     "ownIt": "Read the book.",
@@ -837,7 +837,7 @@
     "name": "Standing Chest Openers, Unilateral",
     "description": "Improves humerus and scapula range of motion and balances shoulder motion with motion of the thoracic spine.",
     "images": [
-      "UniStandingChestOpeners.jpg"
+      "images/UniStandingChestOpeners.jpg"
     ],
     "tags": [],
     "ownIt": "Do 2 sets of 10 repetitions on each side.",
@@ -857,8 +857,8 @@
     "name": "Standing Chest Openers, Bilateral",
     "description": "Improves scapula and shoulder range of motion and reduces thoracic spine and torso imbalance.",
     "images": [
-      "BiStandingChest Openers1.jpg",
-      "BiStandingChest Openers2.jpg"
+      "images/BiStandingChest Openers1.jpg",
+      "images/BiStandingChest Openers2.jpg"
     ],
     "tags": [],
     "ownIt": "Do 2 sets of 10 repetitions.",
@@ -876,8 +876,8 @@
     "name": "Wall Clock",
     "description": "Improves function of the scapula. The shoulder blades should move up and down, back and forth, clockwise and counter-clockwise. When they don't, much of the dynamic interaction within the torso is lost.",
     "images": [
-      "WallClock1.jpg",
-      "WallClock2.jpg"
+      "images/WallClock1.jpg",
+      "images/WallClock2.jpg"
     ],
     "tags": [],
     "ownIt": "Hold each clock position for 1 minute.",
@@ -904,8 +904,8 @@
     "name": "Shoulder Shrugs",
     "description": "Promotes proper position of the scapula and throacic extension, while reducing imbalance in the torso and spine.",
     "images": [
-      "ShoulderShrugs1.jpg",
-      "ShoulderShrugs2.jpg"
+      "images/ShoulderShrugs1.jpg",
+      "images/ShoulderShrugs2.jpg"
     ],
     "tags": [],
     "ownIt": "Do 2 sets of 10 repetitions.",
@@ -923,8 +923,8 @@
     "name": "Shoulder Rolls",
     "description": "Promotes proper position and movement of the scapula and shoulder and reduces imblance in the torso and spine.",
     "images": [
-      "ShoulderRolls1.jpg",
-      "ShoulderRolls2.jpg"
+      "images/ShoulderRolls1.jpg",
+      "images/ShoulderRolls2.jpg"
     ],
     "tags": [],
     "ownIt": "Do 2 sets of 10 repetitions in each direction.",
@@ -942,8 +942,8 @@
     "name": "Wall Elbow Curls",
     "description": "Promotes proper positioning of the load joints and synchronizes scapula movement with the thoracic extension and flexion.",
     "images": [
-      "WallElbowCurls1.jpg",
-      "WallElbowCurls2.jpg"
+      "images/WallElbowCurls1.jpg",
+      "images/WallElbowCurls2.jpg"
     ],
     "tags": [],
     "ownIt": "Do 1 set of 25 repetitions.",
