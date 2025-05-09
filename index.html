@@ -62,7 +62,10 @@
             ).join('');
 
             const showExtras = filter !== null;
-            const timers = showExtras && ex.timers.length > 0 ? ex.timers.map(mins => `
+            const timers = showExtras && ex.timers.length > 0 ? ex.timers.map(mins => {
+              const btnId = `ex-${i}-min-${mins}`;
+              return `<button class="timer-btn" data-minutes="${mins}" data-id="${btnId}">Start ${mins} min</button>`;
+            }).join('') :
               <button class="timer-btn" data-minutes="${mins}">Start ${mins} min</button>
             `).join('') : '';
 
@@ -88,7 +91,7 @@
           document.querySelectorAll('.timer-btn').forEach(button => {
             button.addEventListener('click', () => {
               const minutes = parseInt(button.dataset.minutes);
-              const key = button;
+              const key = button.dataset.id;
 
               if (activeTimers.has(key)) {
                 clearInterval(activeTimers.get(key));
