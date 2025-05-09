@@ -69,7 +69,7 @@
             const showExtras = filter !== null;
             const timers = showExtras && ex.timers.length > 0 ? ex.timers.map(mins => {
               const btnId = `ex-${i}-min-${mins}`;
-              return `<button class="timer-btn" data-minutes="${mins}" data-id="${btnId}">Start ${mins} min</button>`;
+              return `<button class="timer-btn" data-minutes="${mins}" data-id="${btnId}" id="${btnId}">Start ${mins} min</button>`;
             }).join('') : '';
 
             const doItBtn = showExtras
