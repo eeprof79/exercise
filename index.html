@@ -166,17 +166,17 @@ const activeTimer = {
   originalLabel: null
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.timer-btn').forEach(button => {
-    button.addEventListener('click', () => {
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.timer-btn').forEach(function (button) {
+    button.addEventListener('click', function () {
       const minutes = parseInt(button.dataset.minutes);
       const thisId = button.dataset.id;
 
       if (thisId === activeTimer.id) {
         clearInterval(activeTimer.interval);
-        const btn = document.querySelector(`[data-id="${thisId}"]`);
+        const btn = document.querySelector('[data-id="' + thisId + '"]');
         if (btn) {
-          btn.textContent = activeTimer.originalLabel || `Start ${minutes} min`;
+          btn.textContent = activeTimer.originalLabel || ('Start ' + minutes + ' min');
           btn.disabled = false;
         }
         activeTimer.id = null;
@@ -190,16 +190,16 @@ document.addEventListener('DOMContentLoaded', () => {
       const original = button.textContent;
       let remaining = minutes * 60;
       button.disabled = true;
-      button.textContent = `${Math.floor(remaining / 60)}:${(remaining % 60).toString().padStart(2, '0')}`;
+      button.textContent = Math.floor(remaining / 60) + ':' + (remaining % 60 < 10 ? '0' : '') + (remaining % 60);
 
       activeTimer.id = thisId;
       activeTimer.originalLabel = original;
 
-      activeTimer.interval = setInterval(() => {
+      activeTimer.interval = setInterval(function () {
         remaining--;
         if (remaining < 0) {
           clearInterval(activeTimer.interval);
-          const btn = document.querySelector(`[data-id="${thisId}"]`);
+          const btn = document.querySelector('[data-id="' + thisId + '"]');
           if (btn) {
             btn.textContent = original;
             btn.disabled = false;
@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
           const m = Math.floor(remaining / 60);
           const s = remaining % 60;
-          button.textContent = `${m}:${s.toString().padStart(2, '0')}`;
+          button.textContent = m + ':' + (s < 10 ? '0' : '') + s;
         }
       }, 1000);
     });
