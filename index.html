@@ -37,7 +37,7 @@
         const closeBtn = document.querySelector('.close-button');
         const timerSound = document.getElementById('timer-sound');
         let currentFilter = null;
-        // removed
+        
 
         function openModal(content) {
           modalBody.innerHTML = content;
@@ -52,7 +52,7 @@
         function renderExercises(filter = null) {
           currentFilter = filter;
           container.innerHTML = '';
-          // removed
+          
 
           data.filter(ex => !filter || ex.areas.includes(filter)).forEach((ex, i) => {
             const card = document.createElement('div');
@@ -88,72 +88,15 @@
           });
 
           
-const activeTimer = {
-  id: null,
-  interval: null,
-  originalLabel: null
-};
-
-document.querySelectorAll('.timer-btn').forEach(button => {
-  button.addEventListener('click', () => {
-    const minutes = parseInt(button.dataset.minutes);
-    const thisId = button.dataset.id;
-
-    if (thisId === activeTimer.id) {
-      clearInterval(activeTimer.interval);
-      const btn = document.querySelector(`[data-id="${thisId}"]`);
-      if (btn) {
-        btn.textContent = activeTimer.originalLabel || `Start ${minutes} min`;
-        btn.disabled = false;
-      }
-      activeTimer.id = null;
-      activeTimer.interval = null;
-      activeTimer.originalLabel = null;
-      return;
-    }
-
-    if (activeTimer.interval) return;
-
-    const original = button.textContent;
-    let remaining = minutes * 60;
-    button.disabled = true;
-    button.textContent = `${Math.floor(remaining / 60)}:${(remaining % 60).toString().padStart(2, '0')}`;
-
-    activeTimer.id = thisId;
-    activeTimer.originalLabel = original;
-
-    activeTimer.interval = setInterval(() => {
-      remaining--;
-      if (remaining < 0) {
-        clearInterval(activeTimer.interval);
-        const btn = document.querySelector(`[data-id="${thisId}"]`);
-        if (btn) {
-          btn.textContent = original;
-          btn.disabled = false;
-        }
-        activeTimer.id = null;
-        activeTimer.interval = null;
-        activeTimer.originalLabel = null;
-        timerSound.play();
-        alert("Time's up!");
-      } else {
-        const m = Math.floor(remaining / 60);
-        const s = remaining % 60;
-        button.textContent = `${m}:${s.toString().padStart(2, '0')}`;
-      }
-    }, 1000);
-  });
-});
-
             button.addEventListener('click', () => {
               const minutes = parseInt(button.dataset.minutes);
               const key = button.dataset.id;
 
-              if (// removedkey)) {
-                clearInterval(// removedkey));
+              if (key)) {
+                clearInterval(key));
                 button.textContent = `Start ${minutes} min`;
                 button.disabled = false;
-                // removedkey);
+                key);
                 return;
               }
 
@@ -171,11 +114,11 @@ document.querySelectorAll('.timer-btn').forEach(button => {
                   button.disabled = false;
                   timerSound.play();
                   alert("Time's up!");
-                  // removedkey);
+                  key);
                 }
               }, 1000);
 
-              // removedkey, interval);
+              key, interval);
             });
           });
 
@@ -215,5 +158,67 @@ document.querySelectorAll('.timer-btn').forEach(button => {
         console.error(err);
       });
   </script>
+
+<script>
+const activeTimer = {
+  id: null,
+  interval: null,
+  originalLabel: null
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.timer-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const minutes = parseInt(button.dataset.minutes);
+      const thisId = button.dataset.id;
+
+      if (thisId === activeTimer.id) {
+        clearInterval(activeTimer.interval);
+        const btn = document.querySelector(`[data-id="${thisId}"]`);
+        if (btn) {
+          btn.textContent = activeTimer.originalLabel || `Start ${minutes} min`;
+          btn.disabled = false;
+        }
+        activeTimer.id = null;
+        activeTimer.interval = null;
+        activeTimer.originalLabel = null;
+        return;
+      }
+
+      if (activeTimer.interval) return;
+
+      const original = button.textContent;
+      let remaining = minutes * 60;
+      button.disabled = true;
+      button.textContent = `${Math.floor(remaining / 60)}:${(remaining % 60).toString().padStart(2, '0')}`;
+
+      activeTimer.id = thisId;
+      activeTimer.originalLabel = original;
+
+      activeTimer.interval = setInterval(() => {
+        remaining--;
+        if (remaining < 0) {
+          clearInterval(activeTimer.interval);
+          const btn = document.querySelector(`[data-id="${thisId}"]`);
+          if (btn) {
+            btn.textContent = original;
+            btn.disabled = false;
+          }
+          activeTimer.id = null;
+          activeTimer.interval = null;
+          activeTimer.originalLabel = null;
+          timerSound.play();
+          alert("Time's up!");
+        } else {
+          const m = Math.floor(remaining / 60);
+          const s = remaining % 60;
+          button.textContent = `${m}:${s.toString().padStart(2, '0')}`;
+        }
+      }, 1000);
+    });
+  });
+});
+</script>
+
 </body>
 </html>
