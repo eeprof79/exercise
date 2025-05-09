@@ -7,8 +7,9 @@
       "images/SittingHeelBlock2.jpg"
     ],
     "tags": [
-      "Feet",
-      "Ankle"
+      "Feet Menu",
+      "Ankle Menu",
+      "Shoulders with Pain"
     ],
     "ownIt": "Do 3 sets of 10 repetitions.",
     "timers": [],
@@ -27,7 +28,9 @@
       "images/ShortFoot.jpg"
     ],
     "tags": [
-      "Feet"
+      "Feet Menu",
+      "Hips Pelvis (with Pain)",
+      "Necks"
     ],
     "ownIt": "Do 3 sets of 10 repetitions on each side.",
     "timers": [],
@@ -46,7 +49,13 @@
       "images/StaticBack.jpg"
     ],
     "tags": [
-      "Feet"
+      "Feet Menu",
+      "Knees with External Femur Rotation",
+      "Hips Pelvis (with Pain)",
+      "Back - Lumbar Pain/Herniated Discs",
+      "Back - Thoracic Back Pain",
+      "Shoulders with Pain",
+      "Headaches"
     ],
     "ownIt": "Hold this position for 5 minutes.",
     "timers": [
@@ -67,7 +76,7 @@
       "images/Frog2.jpg"
     ],
     "tags": [
-      "Feet"
+      "Feet Menu"
     ],
     "ownIt": "Hold for 2 minutes.",
     "timers": [
@@ -92,8 +101,9 @@
       "images/FootCircles2.jpg"
     ],
     "tags": [
-      "Feet",
-      "Ankle"
+      "Feet Menu",
+      "Ankle Menu",
+      "Hips Pelvis (no Pain)"
     ],
     "ownIt": "Do 20 flexes on each side.",
     "timers": [],
@@ -115,7 +125,7 @@
       "images/CalfHamStretch2.jpg"
     ],
     "tags": [
-      "Feet"
+      "Feet Menu"
     ],
     "ownIt": "Hold it for 30 seconds on each side for both.",
     "timers": [],
@@ -140,8 +150,16 @@
       "images/StaticExt.jpg"
     ],
     "tags": [
-      "Feet",
-      "Ankle"
+      "Feet Menu",
+      "Ankle Menu",
+      "Knees with External Femur Rotation",
+      "Hips Pelvis (with Pain)",
+      "Back - Lumbar Pain/Herniated Discs",
+      "Back - Thoracic Back Pain",
+      "Shoulders No Pain but with Motion Restrictions",
+      "Necks",
+      "Headaches",
+      "Elbows"
     ],
     "ownIt": "Hold for 1 or 2 minutes.",
     "timers": [
@@ -165,7 +183,12 @@
       "images/AirBench.jpg"
     ],
     "tags": [
-      "Feet"
+      "Feet Menu",
+      "Knees with Internal Femur Rotation",
+      "Hips Pelvis (with Pain)",
+      "Shoulders with Pain",
+      "Necks",
+      "Hands and Wrists"
     ],
     "ownIt": "Hold for 1 to 3 minutes or as long as you can.",
     "timers": [
@@ -194,7 +217,7 @@
       "images/StandArmCircles2.jpg"
     ],
     "tags": [
-      "Ankle"
+      "Ankle Menu"
     ],
     "ownIt": "Do 50 with palms down and 50 with palms up.",
     "timers": [],
@@ -214,7 +237,7 @@
       "images/AdAbuct2.jpg"
     ],
     "tags": [
-      "Ankle"
+      "Ankle Menu"
     ],
     "ownIt": "Do 2 sets of 10 repetitions of each position.",
     "timers": [],
@@ -236,7 +259,7 @@
       "images/StaticWall.jpg"
     ],
     "tags": [
-      "Ankle"
+      "Ankle Menu"
     ],
     "ownIt": "Hold for 3 to 5 minutes.",
     "timers": [
@@ -262,7 +285,11 @@
       "images/CatsDogs2.jpg"
     ],
     "tags": [
-      "Ankle"
+      "Ankle Menu",
+      "Shoulders with Pain",
+      "Shoulders No Pain but with Motion Restrictions",
+      "Headaches",
+      "Elbows"
     ],
     "ownIt": "Do 1 set of 10.",
     "timers": [],
@@ -281,7 +308,7 @@
       "images/CrossCrawl2.jpg"
     ],
     "tags": [
-      "Ankle"
+      "Ankle Menu"
     ],
     "ownIt": "Do 2 sets of 10 repetitions on each side.",
     "timers": [],
@@ -298,7 +325,9 @@
     "images": [
       "images/FlexKneeSqueezes.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Knees with External Femur Rotation"
+    ],
     "ownIt": "Do 3 sets of 10 repetitions.",
     "timers": [],
     "howTo": [
@@ -313,7 +342,10 @@
     "images": [
       "images/StandQuadStretch.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Knees with External Femur Rotation",
+      "Hands and Wrists"
+    ],
     "ownIt": "Hold for 1 minute on each side.",
     "timers": [
       1
@@ -335,7 +367,9 @@
     "images": [
       "images/StandForwardBend.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Knees with External Femur Rotation"
+    ],
     "ownIt": "Hold this position for 1 minute.",
     "timers": [
       1
@@ -357,7 +391,11 @@
     "images": [
       "images/ProgSupineGroin.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Knees with External Femur Rotation",
+      "Shoulders with Pain",
+      "Elbows"
+    ],
     "ownIt": "Hold each position for 3 minutes and repeat on the opposite side.",
     "timers": [
       3
@@ -375,7 +413,13 @@
     "images": [
       "images/StandWallPillow.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Knees with Internal Femur Rotation",
+      "Shoulders with Pain",
+      "Necks",
+      "Headaches",
+      "Hands and Wrists"
+    ],
     "ownIt": "Hold for 6 to 8 minutes.",
     "timers": [
       6,
@@ -395,7 +439,10 @@
     "images": [
       "images/WallStork.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Knees with Internal Femur Rotation",
+      "Shoulders with Pain"
+    ],
     "ownIt": "Do 3 minutes on each leg.",
     "timers": [
       3
@@ -418,7 +465,10 @@
     "images": [
       "images/LyingSupine.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Knees with Internal Femur Rotation",
+      "Back - Lumbar Pain/Herniated Discs"
+    ],
     "ownIt": "Hold for 3 to 5 minutes.",
     "timers": [
       3,
@@ -440,7 +490,10 @@
     "images": [
       "images/ModFloorBlock.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Knees with Internal Femur Rotation",
+      "Back - Lumbar Pain/Herniated Discs"
+    ],
     "ownIt": "Hold for 6 minutes.",
     "timers": [
       6
@@ -460,7 +513,10 @@
       "images/KneeSqueezeStaticBack1.jpg",
       "images/KneeSqueezeStaticBack2.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Hips Pelvis (no Pain)",
+      "Back - Lumbar Pain/Herniated Discs"
+    ],
     "ownIt": "Hold static back for 3 minutes then do 3 sets of 10 repitions of knee pillow squeezes.",
     "timers": [
       3
@@ -482,7 +538,10 @@
       "images/HooklyingRockingChair1.jpg",
       "images/HooklyingRockingChair2.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Hips Pelvis (no Pain)",
+      "Hips Pelvis (with Pain)"
+    ],
     "ownIt": "Do 3 sets of 10 repetitions.",
     "timers": [],
     "howTo": [
@@ -500,7 +559,9 @@
     "images": [
       "images/HipLifts.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Hips Pelvis (no Pain)"
+    ],
     "ownIt": "Do 1 minute on each side.",
     "timers": [
       1
@@ -523,7 +584,10 @@
       "images/PelvicTilts1.jpg",
       "images/PelvicTilts2.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Hips Pelvis (no Pain)",
+      "Hips Pelvis (with Pain)"
+    ],
     "ownIt": "Do 1 set of 10 repetitions.",
     "timers": [],
     "howTo": [
@@ -539,7 +603,10 @@
       "images/FloorBlock1.jpg",
       "images/FloorBlock2.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Hips Pelvis (no Pain)",
+      "Back - Thoracic Back Pain"
+    ],
     "ownIt": "Hold for 1 minute in each position.",
     "timers": [
       1
@@ -565,7 +632,9 @@
       "images/ActiveWishbone1.jpg",
       "images/ActiveWishbone2.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Hips Pelvis (no Pain)"
+    ],
     "ownIt": "Do 3 sets of 10 repetitions.",
     "timers": [],
     "howTo": [
@@ -584,7 +653,9 @@
     "images": [
       "images/KneelCounterStretch.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Hips Pelvis (no Pain)"
+    ],
     "ownIt": "Hold for 1 minute.",
     "timers": [
       1
@@ -606,7 +677,9 @@
       "images/GravityDrop1.jpg",
       "images/GravityDrop2.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Hips Pelvis (no Pain)"
+    ],
     "ownIt": "Hold for 3 minutes.",
     "timers": [
       3
@@ -627,7 +700,11 @@
       "images/Hanging1.jpg",
       "images/Hanging2.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Hips Pelvis (with Pain)",
+      "Elbows",
+      "Hands and Wrists"
+    ],
     "ownIt": "Hold for 1 minute.",
     "timers": [
       1
@@ -646,7 +723,9 @@
       "images/UniSupineFemurRotations1.jpg",
       "images/UniSupineFemurRotations2.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Hips Pelvis (with Pain)"
+    ],
     "ownIt": "Do 2 sets of 10 repetitions for each leg.",
     "timers": [],
     "howTo": [
@@ -666,7 +745,11 @@
       "images/SitKneeSqueeze1.jpg",
       "images/SitKneeSqueeze2.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Back - Lumbar Pain/Herniated Discs",
+      "Shoulders No Pain but with Motion Restrictions",
+      "Necks"
+    ],
     "ownIt": "Do 3 sets of 10 repetitions.",
     "timers": [],
     "howTo": [
@@ -681,7 +764,10 @@
     "images": [
       "images/ReversePresses.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Back - Thoracic Back Pain",
+      "Shoulders with Pain"
+    ],
     "ownIt": "Do 15 times, 3 sets.",
     "timers": [],
     "howTo": [
@@ -701,7 +787,10 @@
       "images/Pullovers1.jpg",
       "images/Pullovers2.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Back - Thoracic Back Pain",
+      "Headaches"
+    ],
     "ownIt": "Do 15 times, 3 sets.",
     "timers": [],
     "howTo": [
@@ -719,7 +808,10 @@
     "images": [
       "images/Squat.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Back - Thoracic Back Pain",
+      "Shoulders No Pain but with Motion Restrictions"
+    ],
     "ownIt": "Hold for 1 or 2 minutes.",
     "timers": [
       1,
@@ -744,7 +836,9 @@
       "images/ThreePosToeRaises1.jpg",
       "images/ThreePosToeRaises2.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Shoulders with Pain"
+    ],
     "ownIt": "Do 2 sets of 10 toe raises in each position.",
     "timers": [],
     "howTo": [
@@ -767,7 +861,9 @@
       "images/SittingFloor1.jpg",
       "images/SittingFloor2.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Shoulders No Pain but with Motion Restrictions"
+    ],
     "ownIt": "Hold 4 to 6 minutes.",
     "timers": [
       4,
@@ -791,7 +887,9 @@
       "images/ArmCircles1.jpg",
       "images/ArmCircles2.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Shoulders No Pain but with Motion Restrictions"
+    ],
     "ownIt": "Do 50 with palms down and 50 with palms up.",
     "timers": [],
     "howTo": [
@@ -809,7 +907,9 @@
       "images/HeroPose1.jpg",
       "images/HeroPose2.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Necks"
+    ],
     "ownIt": "Hold for 1 minute.",
     "timers": [
       1
@@ -826,7 +926,9 @@
     "images": [
       "images/SlantBoardAnkle.png"
     ],
-    "tags": [],
+    "tags": [
+      "Headaches"
+    ],
     "ownIt": "Read the book.",
     "timers": [],
     "howTo": [
@@ -839,7 +941,9 @@
     "images": [
       "images/UniStandingChestOpeners.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Elbows"
+    ],
     "ownIt": "Do 2 sets of 10 repetitions on each side.",
     "timers": [],
     "howTo": [
@@ -860,7 +964,9 @@
       "images/BiStandingChest Openers1.jpg",
       "images/BiStandingChest Openers2.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Elbows"
+    ],
     "ownIt": "Do 2 sets of 10 repetitions.",
     "timers": [],
     "howTo": [
@@ -879,7 +985,10 @@
       "images/WallClock1.jpg",
       "images/WallClock2.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Elbows",
+      "Hands and Wrists"
+    ],
     "ownIt": "Hold each clock position for 1 minute.",
     "timers": [
       1
@@ -907,7 +1016,9 @@
       "images/ShoulderShrugs1.jpg",
       "images/ShoulderShrugs2.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Hands and Wrists"
+    ],
     "ownIt": "Do 2 sets of 10 repetitions.",
     "timers": [],
     "howTo": [
@@ -926,7 +1037,9 @@
       "images/ShoulderRolls1.jpg",
       "images/ShoulderRolls2.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Hands and Wrists"
+    ],
     "ownIt": "Do 2 sets of 10 repetitions in each direction.",
     "timers": [],
     "howTo": [
@@ -945,7 +1058,9 @@
       "images/WallElbowCurls1.jpg",
       "images/WallElbowCurls2.jpg"
     ],
-    "tags": [],
+    "tags": [
+      "Elbows"
+    ],
     "ownIt": "Do 1 set of 25 repetitions.",
     "timers": [],
     "howTo": [
