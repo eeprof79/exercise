@@ -26,126 +26,63 @@
       originalLabel: null
     };
 
-    document.addEventListener('DOMContentLoaded', function () {
-      document.querySelectorAll('.timer-btn').forEach(function (button) {
-        button.addEventListener('click', function () {
-          const minutes = parseInt(button.dataset.minutes);
-          const thisId = button.dataset.id;
+    document.querySelectorAll('.timer-btn').forEach(function (button) {
+      button.addEventListener('click', function () {
+        const minutes = parseInt(button.dataset.minutes);
+        const thisId = button.dataset.id;
 
-          if (thisId === activeTimer.id) {
-            clearInterval(activeTimer.interval);
-            const btn = document.querySelector('[data-id="' + thisId + '"]');
-            if (btn) {
-              btn.textContent = activeTimer.originalLabel || ('Start ' + minutes + ' min');
-              btn.disabled = false;
-            }
-            activeTimer.id = null;
-            activeTimer.interval = null;
-            activeTimer.originalLabel = null;
-            return;
-          }
+        console.log("Button clicked:", thisId);
+        console.log("Active timer ID:", activeTimer.id);
 
-          if (activeTimer.interval) return;
-
-          const original = button.textContent;
-          let remaining = minutes * 60;
-          button.disabled = true;
-          button.textContent = Math.floor(remaining / 60) + ':' + (remaining % 60 < 10 ? '0' : '') + (remaining % 60);
-
-          activeTimer.id = thisId;
-          activeTimer.originalLabel = original;
-
-          activeTimer.interval = setInterval(function () {
-            remaining--;
-            if (remaining < 0) {
-              clearInterval(activeTimer.interval);
-              const btn = document.querySelector('[data-id="' + thisId + '"]');
-              if (btn) {
-                btn.textContent = original;
-                btn.disabled = false;
-              }
-              activeTimer.id = null;
-              activeTimer.interval = null;
-              activeTimer.originalLabel = null;
-              alert("Time's up!");
-            } else {
-              const m = Math.floor(remaining / 60);
-              const s = remaining % 60;
-              button.textContent = m + ':' + (s < 10 ? '0' : '') + s;
-            }
-          }, 1000);
-        });
-      });
-    });
-  </script>
-
-<script>
-const activeTimer = {
-  id: null,
-  interval: null,
-  originalLabel: null
-};
-
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.timer-btn').forEach(function (button) {
-    button.addEventListener('click', function () {
-      const minutes = parseInt(button.dataset.minutes);
-      const thisId = button.dataset.id;
-
-      console.log("Button clicked:", thisId);
-      console.log("Active timer ID:", activeTimer.id);
-
-      if (thisId === activeTimer.id) {
-        console.log("Resetting timer");
-        clearInterval(activeTimer.interval);
-        const btn = document.querySelector('[data-id="' + thisId + '"]');
-        if (btn) {
-          btn.textContent = activeTimer.originalLabel || ('Start ' + minutes + ' min');
-          btn.disabled = false;
-        }
-        activeTimer.id = null;
-        activeTimer.interval = null;
-        activeTimer.originalLabel = null;
-        return;
-      }
-
-      if (activeTimer.interval) {
-        console.log("Another timer is already running.");
-        return;
-      }
-
-      console.log("Starting new timer");
-      const original = button.textContent;
-      let remaining = minutes * 60;
-      button.disabled = true;
-      button.textContent = Math.floor(remaining / 60) + ':' + (remaining % 60 < 10 ? '0' : '') + (remaining % 60);
-
-      activeTimer.id = thisId;
-      activeTimer.originalLabel = original;
-
-      activeTimer.interval = setInterval(function () {
-        remaining--;
-        if (remaining < 0) {
+        if (thisId === activeTimer.id) {
+          console.log("Resetting timer");
           clearInterval(activeTimer.interval);
           const btn = document.querySelector('[data-id="' + thisId + '"]');
           if (btn) {
-            btn.textContent = original;
+            btn.textContent = activeTimer.originalLabel || ('Start ' + minutes + ' min');
             btn.disabled = false;
           }
           activeTimer.id = null;
           activeTimer.interval = null;
           activeTimer.originalLabel = null;
-          alert("Time's up!");
-        } else {
-          const m = Math.floor(remaining / 60);
-          const s = remaining % 60;
-          button.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+          return;
         }
-      }, 1000);
-    });
-  });
-});
-</script>
 
+        if (activeTimer.interval) {
+          console.log("Another timer is already running.");
+          return;
+        }
+
+        console.log("Starting new timer");
+        const original = button.textContent;
+        let remaining = minutes * 60;
+        button.disabled = true;
+        button.textContent = Math.floor(remaining / 60) + ':' + (remaining % 60 < 10 ? '0' : '') + (remaining % 60);
+
+        activeTimer.id = thisId;
+        activeTimer.originalLabel = original;
+
+        activeTimer.interval = setInterval(function () {
+          remaining--;
+          if (remaining < 0) {
+            clearInterval(activeTimer.interval);
+            const btn = document.querySelector('[data-id="' + thisId + '"]');
+            if (btn) {
+              btn.textContent = original;
+              btn.disabled = false;
+            }
+            activeTimer.id = null;
+            activeTimer.interval = null;
+            activeTimer.originalLabel = null;
+            alert("Time's up!");
+          } else {
+            const m = Math.floor(remaining / 60);
+            const s = remaining % 60;
+            button.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+          }
+        }, 1000);
+      });
+    });
+  </script>
 </body>
 </html>
