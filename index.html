@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Exercise Timer (Reset Working)</title>
+  <title>Exercise Timer (Resets Correctly)</title>
   <style>
     body { font-family: sans-serif; padding: 20px; }
     .card { border: 1px solid #ccc; padding: 10px; margin: 10px 0; border-radius: 6px; }
@@ -23,6 +23,7 @@
     const activeTimer = {
       id: null,
       interval: null,
+      button: null,
       originalLabel: null
     };
 
@@ -37,12 +38,10 @@
         if (thisId === activeTimer.id) {
           console.log("Resetting timer");
           clearInterval(activeTimer.interval);
-          const btn = document.querySelector('[data-id="' + thisId + '"]');
-          if (btn) {
-            btn.textContent = activeTimer.originalLabel || ('Start ' + minutes + ' min');
-          }
+          activeTimer.button.textContent = activeTimer.originalLabel;
           activeTimer.id = null;
           activeTimer.interval = null;
+          activeTimer.button = null;
           activeTimer.originalLabel = null;
           return;
         }
@@ -55,21 +54,22 @@
         console.log("Starting new timer");
         const original = button.textContent;
         let remaining = minutes * 60;
+
         button.textContent = Math.floor(remaining / 60) + ':' + (remaining % 60 < 10 ? '0' : '') + (remaining % 60);
 
         activeTimer.id = thisId;
+        activeTimer.interval = null;
+        activeTimer.button = button;
         activeTimer.originalLabel = original;
 
         activeTimer.interval = setInterval(function () {
           remaining--;
           if (remaining < 0) {
             clearInterval(activeTimer.interval);
-            const btn = document.querySelector('[data-id="' + thisId + '"]');
-            if (btn) {
-              btn.textContent = original;
-            }
+            activeTimer.button.textContent = activeTimer.originalLabel;
             activeTimer.id = null;
             activeTimer.interval = null;
+            activeTimer.button = null;
             activeTimer.originalLabel = null;
             alert("Time's up!");
           } else {
