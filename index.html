@@ -37,7 +37,8 @@
         const closeBtn = document.querySelector('.close-button');
         const timerSound = document.getElementById('timer-sound');
         let currentFilter = null;
-        let activeTimers = new Map();
+        let activeTimer = null;
+let activeButton = null;
 
         function openModal(content) {
           modalBody.innerHTML = content;
@@ -88,6 +89,47 @@
           });
 
           document.querySelectorAll('.timer-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const minutes = parseInt(button.dataset.minutes);
+
+        // If this is the currently running timer, stop and reset it
+        if (activeButton === button) {
+          clearInterval(activeTimer);
+          button.textContent = `Start ${minutes} min`;
+          button.disabled = false;
+          activeTimer = null;
+          activeButton = null;
+          return;
+        }
+
+        // If another timer is running, ignore this click
+        if (activeTimer) return;
+
+        // Start a new timer
+        const original = `Start ${minutes} min`;
+        let remaining = minutes * 60;
+        button.disabled = true;
+        activeButton = button;
+
+        button.textContent = `${Math.floor(remaining / 60)}:${(remaining % 60).toString().padStart(2, '0')}`;
+
+        activeTimer = setInterval(() => {
+          remaining--;
+          if (remaining < 0) {
+            clearInterval(activeTimer);
+            button.textContent = original;
+            button.disabled = false;
+            activeTimer = null;
+            activeButton = null;
+            timerSound.play();
+            alert("Time's up!");
+          } else {
+            const m = Math.floor(remaining / 60);
+            const s = remaining % 60;
+            button.textContent = `${m}:${s.toString().padStart(2, '0')}`;
+          }
+        }, 1000);
+      });
             button.addEventListener('click', () => {
               const minutes = parseInt(button.dataset.minutes);
               const key = button.dataset.id;
