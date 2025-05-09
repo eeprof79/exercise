@@ -37,7 +37,7 @@
         const closeBtn = document.querySelector('.close-button');
         const timerSound = document.getElementById('timer-sound');
         let currentFilter = null;
-        
+        // removed
 
         function openModal(content) {
           modalBody.innerHTML = content;
@@ -52,7 +52,7 @@
         function renderExercises(filter = null) {
           currentFilter = filter;
           container.innerHTML = '';
-          
+          // removed
 
           data.filter(ex => !filter || ex.areas.includes(filter)).forEach((ex, i) => {
             const card = document.createElement('div');
@@ -149,11 +149,11 @@ document.querySelectorAll('.timer-btn').forEach(button => {
               const minutes = parseInt(button.dataset.minutes);
               const key = button.dataset.id;
 
-              if (// REMOVED has(key)) {
-                clearInterval(// REMOVED get(key));
+              if (// removedkey)) {
+                clearInterval(// removedkey));
                 button.textContent = `Start ${minutes} min`;
                 button.disabled = false;
-                activeTimers.delete(key);
+                // removedkey);
                 return;
               }
 
@@ -171,11 +171,11 @@ document.querySelectorAll('.timer-btn').forEach(button => {
                   button.disabled = false;
                   timerSound.play();
                   alert("Time's up!");
-                  activeTimers.delete(key);
+                  // removedkey);
                 }
               }, 1000);
 
-              // REMOVED set(key, interval);
+              // removedkey, interval);
             });
           });
 
