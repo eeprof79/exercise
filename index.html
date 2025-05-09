@@ -65,7 +65,7 @@
             const showExtras = filter !== null;
             const timers = showExtras && ex.timers.length > 0 ? ex.timers.map(mins => {
               const btnId = `ex-${i}-min-${mins}`;
-              return `<button class="timer-btn" data-minutes="${mins}" data-id="${btnId}" id="${btnId}">Start ${mins} min</button>`;
+              return `<button class="timer-btn" data-minutes="${mins}" data-id="${btnId}">Start ${mins} min</button>`;
             }).join('') : '';
 
             const doItBtn = showExtras
@@ -98,7 +98,7 @@ document.querySelectorAll('.timer-btn').forEach(button => {
     const minutes = parseInt(button.dataset.minutes);
     const thisId = button.dataset.id;
 
-    // Reset if same timer clicked
+    // Reset if this button is the active one
     if (thisId === activeTimer.id) {
       clearInterval(activeTimer.interval);
       const btn = document.querySelector(`[data-id="${thisId}"]`);
@@ -112,7 +112,7 @@ document.querySelectorAll('.timer-btn').forEach(button => {
       return;
     }
 
-    // Prevent new timer if one is already running
+    // If another timer is active, do nothing
     if (activeTimer.interval) return;
 
     const original = button.textContent;
