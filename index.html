@@ -87,7 +87,8 @@
             container.appendChild(card);
           });
 
-          const activeTimer = {
+          
+const activeTimer = {
   id: null,
   interval: null,
   originalLabel: null
@@ -98,7 +99,7 @@ document.querySelectorAll('.timer-btn').forEach(button => {
     const minutes = parseInt(button.dataset.minutes);
     const thisId = button.dataset.id;
 
-    // Reset if this button is the active one
+    // If clicking the active timer, reset it
     if (thisId === activeTimer.id) {
       clearInterval(activeTimer.interval);
       const btn = document.querySelector(`[data-id="${thisId}"]`);
@@ -112,7 +113,7 @@ document.querySelectorAll('.timer-btn').forEach(button => {
       return;
     }
 
-    // If another timer is active, do nothing
+    // If another timer is active, ignore
     if (activeTimer.interval) return;
 
     const original = button.textContent;
@@ -145,6 +146,7 @@ document.querySelectorAll('.timer-btn').forEach(button => {
     }, 1000);
   });
 });
+
             button.addEventListener('click', () => {
               const minutes = parseInt(button.dataset.minutes);
               const key = button.dataset.id;
