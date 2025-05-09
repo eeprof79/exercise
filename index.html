@@ -37,7 +37,7 @@
         const closeBtn = document.querySelector('.close-button');
         const timerSound = document.getElementById('timer-sound');
         let currentFilter = null;
-        
+        // removed
 
         function openModal(content) {
           modalBody.innerHTML = content;
@@ -49,10 +49,10 @@
           if (e.target === modal) modal.classList.add('hidden');
         };
 
-        function renderExercises(filter = null) {
+        function // removedfilter = null) {
           currentFilter = filter;
           container.innerHTML = '';
-          
+          // removed
 
           data.filter(ex => !filter || ex.areas.includes(filter)).forEach((ex, i) => {
             const card = document.createElement('div');
@@ -87,16 +87,16 @@
             container.appendChild(card);
           });
 
-          
+          document.querySelectorAll('.timer-btn').forEach(button => {
             button.addEventListener('click', () => {
               const minutes = parseInt(button.dataset.minutes);
               const key = button.dataset.id;
 
-              if (key)) {
-                clearInterval(key));
+              if (// removedkey)) {
+                clearInterval(// removedkey));
                 button.textContent = `Start ${minutes} min`;
                 button.disabled = false;
-                key);
+                // removedkey);
                 return;
               }
 
@@ -114,11 +114,11 @@
                   button.disabled = false;
                   timerSound.play();
                   alert("Time's up!");
-                  key);
+                  // removedkey);
                 }
               }, 1000);
 
-              key, interval);
+              // removedkey, interval);
             });
           });
 
@@ -141,16 +141,16 @@
         areas.forEach(area => {
           const btn = document.createElement('button');
           btn.textContent = area;
-          btn.onclick = () => renderExercises(area);
+          btn.onclick = () => // removedarea);
           filters.appendChild(btn);
         });
 
         const allBtn = document.createElement('button');
         allBtn.textContent = "Show All";
-        allBtn.onclick = () => renderExercises(null);
+        allBtn.onclick = () => // removednull);
         filters.prepend(allBtn);
 
-        renderExercises();
+        // removed);
       })
       .catch(err => {
         document.getElementById('exercise-container').innerHTML =
@@ -167,7 +167,8 @@ const activeTimer = {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.timer-btn').forEach(function (button) {
+  const buttons = document.querySelectorAll('.timer-btn');
+  buttons.forEach(function (button) {
     button.addEventListener('click', function () {
       const minutes = parseInt(button.dataset.minutes);
       const thisId = button.dataset.id;
