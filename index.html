@@ -38,6 +38,7 @@
         const timerSound = document.getElementById('timer-sound');
         let currentFilter = null;
         let activeTimer = null;
+let activeTimerId = null;
 
         function openModal(content) {
           modalBody.innerHTML = content;
@@ -52,7 +53,7 @@
         function renderExercises(filter = null) {
           currentFilter = filter;
           container.innerHTML = '';
-          
+          activeTimers.clear();
 
           data.filter(ex => !filter || ex.areas.includes(filter)).forEach((ex, i) => {
             const card = document.createElement('div');
@@ -90,25 +91,26 @@
           document.querySelectorAll('.timer-btn').forEach(button => {
       button.addEventListener('click', () => {
         const minutes = parseInt(button.dataset.minutes);
+        const thisId = button.dataset.id;
 
-        // If this button is the currently running timer, reset it
-        if (button.classList.contains('running')) {
+        // If this is the active timer, reset it
+        if (activeTimerId === thisId) {
           clearInterval(activeTimer);
           button.textContent = `Start ${minutes} min`;
           button.disabled = false;
-          button.classList.remove('running');
           activeTimer = null;
+          activeTimerId = null;
           return;
         }
 
-        // If another timer is already running, ignore this click
-        if (document.querySelector('.timer-btn.running')) return;
+        // If another timer is already running, do nothing
+        if (activeTimer) return;
 
-        // Start a new timer
+        // Start this timer
         const original = `Start ${minutes} min`;
         let remaining = minutes * 60;
         button.disabled = true;
-        button.classList.add('running');
+        activeTimerId = thisId;
 
         button.textContent = `${Math.floor(remaining / 60)}:${(remaining % 60).toString().padStart(2, '0')}`;
 
@@ -118,8 +120,8 @@
             clearInterval(activeTimer);
             button.textContent = original;
             button.disabled = false;
-            button.classList.remove('running');
             activeTimer = null;
+            activeTimerId = null;
             timerSound.play();
             alert("Time's up!");
           } else {
