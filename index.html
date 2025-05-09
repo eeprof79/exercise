@@ -99,7 +99,6 @@ document.querySelectorAll('.timer-btn').forEach(button => {
     const minutes = parseInt(button.dataset.minutes);
     const thisId = button.dataset.id;
 
-    // If clicking the active timer, reset it
     if (thisId === activeTimer.id) {
       clearInterval(activeTimer.interval);
       const btn = document.querySelector(`[data-id="${thisId}"]`);
@@ -113,7 +112,6 @@ document.querySelectorAll('.timer-btn').forEach(button => {
       return;
     }
 
-    // If another timer is active, ignore
     if (activeTimer.interval) return;
 
     const original = button.textContent;
@@ -151,8 +149,8 @@ document.querySelectorAll('.timer-btn').forEach(button => {
               const minutes = parseInt(button.dataset.minutes);
               const key = button.dataset.id;
 
-              if (activeTimers.has(key)) {
-                clearInterval(activeTimers.get(key));
+              if (// removedkey)) {
+                clearInterval(// removedkey));
                 button.textContent = `Start ${minutes} min`;
                 button.disabled = false;
                 activeTimers.delete(key);
@@ -177,7 +175,7 @@ document.querySelectorAll('.timer-btn').forEach(button => {
                 }
               }, 1000);
 
-              activeTimers.set(key, interval);
+              // removedkey, interval);
             });
           });
 
