@@ -37,8 +37,11 @@
         const closeBtn = document.querySelector('.close-button');
         const timerSound = document.getElementById('timer-sound');
         let currentFilter = null;
-        let activeTimer = null;
-let activeTimerId = null;
+        const activeTimer = {
+  id: null,
+  interval: null,
+  button: null
+};
 
         function openModal(content) {
           modalBody.innerHTML = content;
@@ -93,36 +96,39 @@ let activeTimerId = null;
         const minutes = parseInt(button.dataset.minutes);
         const thisId = button.dataset.id;
 
-        // If this is the active timer, reset and stop it
-        if (thisId === activeTimerId) {
-          clearInterval(activeTimer);
-          const original = `Start ${minutes} min`;
-          button.textContent = original;
-          button.disabled = false;
-          activeTimer = null;
-          activeTimerId = null;
+        // If this is the running timer, reset and stop it
+        if (activeTimer.id === thisId) {
+          clearInterval(activeTimer.interval);
+          if (activeTimer.button) {
+            activeTimer.button.textContent = `Start ${minutes} min`;
+            activeTimer.button.disabled = false;
+          }
+          activeTimer.id = null;
+          activeTimer.interval = null;
+          activeTimer.button = null;
           return;
         }
 
-        // If another timer is already running, ignore
-        if (activeTimer) return;
+        // If another timer is running, ignore
+        if (activeTimer.id !== null) return;
 
         // Start a new timer
         const original = `Start ${minutes} min`;
         let remaining = minutes * 60;
         button.disabled = true;
-        activeTimerId = thisId;
-
         button.textContent = `${Math.floor(remaining / 60)}:${(remaining % 60).toString().padStart(2, '0')}`;
+        activeTimer.id = thisId;
+        activeTimer.button = button;
 
-        activeTimer = setInterval(() => {
+        activeTimer.interval = setInterval(() => {
           remaining--;
           if (remaining < 0) {
-            clearInterval(activeTimer);
+            clearInterval(activeTimer.interval);
             button.textContent = original;
             button.disabled = false;
-            activeTimer = null;
-            activeTimerId = null;
+            activeTimer.id = null;
+            activeTimer.interval = null;
+            activeTimer.button = null;
             timerSound.play();
             alert("Time's up!");
           } else {
