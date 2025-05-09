@@ -9,152 +9,18 @@
 </head>
 <body>
   <h1>Exercise Library</h1>
-  <div id="filters"></div>
-  <div id="exercise-container"></div>
-
-  <!-- Modal for instructions -->
-  <div id="modal" class="modal hidden">
-    <div class="modal-content">
-      <span class="close-button">&times;</span>
-      <div id="modal-body"></div>
-    </div>
-  </div>
-
-  <audio id="timer-sound" src="timer_end.mp3" preload="auto"></audio>
-
+  <div id="status">Loading exercises.json...</div>
   <script>
-    let exerciseData = [];
-
     fetch('exercises.json')
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) throw new Error("Fetch failed: " + res.status);
+        return res.json();
+      })
       .then(data => {
-        exerciseData = data;
-        const areas = [...new Set(data.flatMap(ex => ex.areas))].sort();
-        const filters = document.getElementById('filters');
-        const container = document.getElementById('exercise-container');
-        const modal = document.getElementById('modal');
-        const modalBody = document.getElementById('modal-body');
-        const closeBtn = document.querySelector('.close-button');
-        const timerSound = document.getElementById('timer-sound');
-        let currentFilter = null;
-        let activeTimers = new Map();
-
-        function openModal(content) {
-          modalBody.innerHTML = content;
-          modal.classList.remove('hidden');
-        }
-
-        closeBtn.onclick = () => modal.classList.add('hidden');
-        window.onclick = e => {
-          if (e.target === modal) modal.classList.add('hidden');
-        };
-
-        function renderExercises(filter = null) {
-          currentFilter = filter;
-          container.innerHTML = '';
-          activeTimers.clear();
-
-          data.filter(ex => !filter || ex.areas.includes(filter)).forEach((ex, i) => {
-            const card = document.createElement('div');
-            card.className = 'card';
-
-            const images = ex.images.map(img =>
-              `<img src="images/${img}" alt="${ex.name}" class="exercise-img">`
-            ).join('');
-
-            const showExtras = filter !== null;
-            const timers = showExtras && ex.timers.length > 0 ? ex.timers.map(mins => {
-              const btnId = `ex-${i}-min-${mins}`;
-              return `<button class="timer-btn" data-minutes="${mins}" data-id="${btnId}">Start ${mins} min</button>`;
-            }).join('') : '';
-
-            const doItBtn = showExtras
-              ? `<button class="doit-btn" data-index="${i}">Do it</button>` : '';
-
-            const tags = !showExtras
-              ? `<div class="tags">${ex.areas.map(area => `<span>${area}</span>`).join(' ')}</div>`
-              : '';
-
-            card.innerHTML = `
-              <h3>${ex.name}</h3>
-              <div class="images">${images}</div>
-              <p>${ex.description || '(No description yet)'}</p>
-              <p class="own-it"><strong>Reps/Sets:</strong> ${ex.own_it}</p>
-              <div class="timers">${timers}</div>
-              ${doItBtn}
-              ${tags}
-            `;
-            container.appendChild(card);
-          });
-
-          document.querySelectorAll('.timer-btn').forEach(button => {
-            button.addEventListener('click', () => {
-              const minutes = parseInt(button.dataset.minutes);
-              const key = button.dataset.id;
-
-              if (activeTimers.has(key)) {
-                clearInterval(activeTimers.get(key));
-                button.textContent = `Start ${minutes} min`;
-                button.disabled = false;
-                activeTimers.delete(key);
-                return;
-              }
-
-              const original = `Start ${minutes} min`;
-              let remaining = minutes * 60;
-              button.disabled = true;
-
-              const interval = setInterval(() => {
-                const m = Math.floor(remaining / 60);
-                const s = remaining % 60;
-                button.textContent = `${m}:${s.toString().padStart(2, '0')}`;
-                if (--remaining < 0) {
-                  clearInterval(interval);
-                  button.textContent = original;
-                  button.disabled = false;
-                  timerSound.play();
-                  alert("Time's up!");
-                  activeTimers.delete(key);
-                }
-              }, 1000);
-
-              activeTimers.set(key, interval);
-            });
-          });
-
-          document.querySelectorAll('.doit-btn').forEach(button => {
-            button.addEventListener('click', () => {
-              const index = parseInt(button.dataset.index);
-              const ex = exerciseData[index];
-              if (!ex || !ex.instructions || ex.instructions.length === 0) {
-                openModal('<h2>How to Do It</h2><p>(No instructions available)</p>');
-                return;
-              }
-              const content = '<h2>How to Do It</h2><ul>' +
-                ex.instructions.map(step => `<li>${step}</li>`).join('') +
-                '</ul>';
-              openModal(content);
-            });
-          });
-        }
-
-        areas.forEach(area => {
-          const btn = document.createElement('button');
-          btn.textContent = area;
-          btn.onclick = () => renderExercises(area);
-          filters.appendChild(btn);
-        });
-
-        const allBtn = document.createElement('button');
-        allBtn.textContent = "Show All";
-        allBtn.onclick = () => renderExercises(null);
-        filters.prepend(allBtn);
-
-        renderExercises();
+        document.getElementById('status').textContent = "Loaded " + data.length + " exercises.";
       })
       .catch(err => {
-        document.getElementById('exercise-container').innerHTML =
-          '<p style="color:red;">Error loading exercise data.</p>';
+        document.getElementById('status').textContent = "ERROR: " + err.message;
         console.error(err);
       });
   </script>
