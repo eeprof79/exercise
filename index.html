@@ -149,8 +149,8 @@ document.querySelectorAll('.timer-btn').forEach(button => {
               const minutes = parseInt(button.dataset.minutes);
               const key = button.dataset.id;
 
-              if (// removedkey)) {
-                clearInterval(// removedkey));
+              if (// REMOVED has(key)) {
+                clearInterval(// REMOVED get(key));
                 button.textContent = `Start ${minutes} min`;
                 button.disabled = false;
                 activeTimers.delete(key);
@@ -175,7 +175,7 @@ document.querySelectorAll('.timer-btn').forEach(button => {
                 }
               }, 1000);
 
-              // removedkey, interval);
+              // REMOVED set(key, interval);
             });
           });
 
