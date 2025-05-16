@@ -13,8 +13,6 @@
       border: none; border-radius: 4px; cursor: pointer;
     }
     .filter-buttons button.active { background: #005a9c; }
-    .exercise-list { margin: 1rem 0; background: #fff; padding: 1rem; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-    .exercise-list h3 { margin-top: 0; }
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
     .card {
       background: white; padding: 1rem; border-radius: 6px;
@@ -34,7 +32,6 @@
 <body>
   <h1>Exercise Menu</h1>
   <div class="filter-buttons" id="filters"></div>
-  <div id="exercise-list-container"></div>
   <div class="grid" id="grid"></div>
 
   <div class="popup" id="popup">
@@ -48,13 +45,12 @@
   <audio id="timerSound" src="timer_end.mp3" preload="auto"></audio>
 
   <script>
-    let data, cards, lists;
+    let data, cards, orderMap;
     fetch("exercises.json")
       .then(res => res.json())
       .then(json => {
-        data = json;
-        cards = json.cards;
-        lists = json.exerciseLists;
+        data = json.cards;
+        orderMap = json.orderedTags;
         init();
       });
 
@@ -62,7 +58,6 @@
     let activeTimer = null;
     const filterEl = document.getElementById('filters');
     const grid = document.getElementById('grid');
-    const listContainer = document.getElementById('exercise-list-container');
     const popup = document.getElementById('popup');
     const popupTitle = document.getElementById('popup-title');
     const popupList = document.getElementById('popup-list');
@@ -80,7 +75,7 @@
     }, { once: true });
 
     function init() {
-      const tags = Array.from(new Set(cards.flatMap(e => e.tags))).sort();
+      const tags = Array.from(new Set(data.flatMap(e => e.tags))).sort();
       ['All', ...tags].forEach(tag => {
         const btn = document.createElement('button');
         btn.textContent = tag;
@@ -97,26 +92,19 @@
     }
 
     function render() {
-      listContainer.innerHTML = '';
       grid.innerHTML = '';
-      const filtered = currentFilter === 'All' ? cards : cards.filter(ex => ex.tags.includes(currentFilter));
+      let shown = [];
 
-      // Show body-area-specific exercise list at top
-      if (currentFilter !== 'All' && lists[currentFilter]) {
-        const box = document.createElement('div');
-        box.className = 'exercise-list';
-        box.innerHTML = `<h3>${currentFilter} Exercise Order</h3>`;
-        const ul = document.createElement('ul');
-        lists[currentFilter].forEach(item => {
-          const li = document.createElement('li');
-          li.textContent = item;
-          ul.appendChild(li);
-        });
-        box.appendChild(ul);
-        listContainer.appendChild(box);
+      if (currentFilter === 'All') {
+        shown = [...data];
+      } else if (orderMap[currentFilter]) {
+        const cardMap = Object.fromEntries(data.map(d => [d.name, d]));
+        shown = orderMap[currentFilter].map(([_, name]) => cardMap[name]).filter(Boolean);
+      } else {
+        shown = data.filter(ex => ex.tags.includes(currentFilter));
       }
 
-      filtered.forEach((ex, i) => {
+      shown.forEach(ex => {
         const card = document.createElement('div');
         card.className = 'card';
         card.innerHTML = `<h3>${ex.name}</h3><p>${ex.description}</p>`;

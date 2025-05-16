@@ -331,7 +331,8 @@
         "images/FlexKneeSqueezes.jpg"
       ],
       "tags": [
-        "Knees with External Femur Rotation"
+        "Knees with External Femur Rotation",
+        "Necks"
       ],
       "ownIt": "Do 3 sets of 10 repetitions.",
       "timers": [],
@@ -752,6 +753,7 @@
       ],
       "tags": [
         "Back - Lumbar Pain/Herniated Discs",
+        "Shoulders with Pain",
         "Shoulders No Pain but with Motion Restrictions",
         "Necks"
       ],
@@ -770,8 +772,7 @@
         "images/ReversePresses.jpg"
       ],
       "tags": [
-        "Back - Thoracic Back Pain",
-        "Shoulders with Pain"
+        "Back - Thoracic Back Pain"
       ],
       "ownIt": "Do 15 times, 3 sets.",
       "timers": [],
@@ -1077,140 +1078,462 @@
       ]
     }
   ],
-  "exerciseLists": {
+  "orderedTags": {
     "Feet Menu": [
-      "Sitting Heel Raises with Block",
-      "Short Foot",
-      "Static Back",
-      "Frog",
-      "Foot Circles and Point Flexes",
-      "Calf-Hamstring Stretch",
-      "Static Extension",
-      "Air Bench"
+      [
+        1,
+        "Sitting Heel Raises with Block"
+      ],
+      [
+        2,
+        "Short foot"
+      ],
+      [
+        3,
+        "Static Back"
+      ],
+      [
+        4,
+        "Frog"
+      ],
+      [
+        5,
+        "Foot Circles/Point Flexes"
+      ],
+      [
+        6,
+        "Calf/Hamstring Stretch"
+      ],
+      [
+        7,
+        "Static Extension Position"
+      ],
+      [
+        8,
+        "Air Bench"
+      ]
     ],
     "Ankle Menu": [
-      "Standing Arrm Circles",
-      "Sitting Heel Raises with Block",
-      "Abduction-Adduction with Narrow and Wide Feet",
-      "Static Wall",
-      "Cats and Dogs",
-      "Static Extension",
-      "Cross-Crawling",
-      "Foot Circles and Point Flexes"
+      [
+        1,
+        "Standing Arm Circles"
+      ],
+      [
+        2,
+        "Sitting Heel Raises with Block"
+      ],
+      [
+        3,
+        "Abduction-Adduction with Narrow and Wide Feet"
+      ],
+      [
+        4,
+        "Static Wall"
+      ],
+      [
+        5,
+        "Cats and Dogs"
+      ],
+      [
+        6,
+        "Static Extension Position"
+      ],
+      [
+        7,
+        "Cross Crawling"
+      ],
+      [
+        8,
+        "Foot Circles/Point Flexes"
+      ]
     ],
     "Knees with External Femur Rotation": [
-      "Flexion Knee Pillow Squeezes",
-      "Static Back",
-      "Cats and Dogs",
-      "Static Extension",
-      "Standing Quad Stretch",
-      "Standing Forward Bend",
-      "Cats and Dogs",
-      "Progressive Supine Groin"
+      [
+        1,
+        "Flexion Knee Pillow Squeezes"
+      ],
+      [
+        2,
+        "Static Back"
+      ],
+      [
+        3,
+        "Cats and Dogs"
+      ],
+      [
+        4,
+        "Static Extension Position"
+      ],
+      [
+        5,
+        "Standing Quad Stretch"
+      ],
+      [
+        6,
+        "Standing Forward Bend"
+      ],
+      [
+        7,
+        "Cats and Dogs"
+      ],
+      [
+        8,
+        "Progressive Supine Groin"
+      ]
     ],
     "Knees with Internal Femur Rotation": [
-      "Standing Wall with Block",
-      "Wall Stork",
-      "Cats and Dogs",
-      "Lying Supine",
-      "Modified Floor Block",
-      "Cats and Dogs",
-      "Air Bench"
+      [
+        1,
+        "Standing Wall with Pillow between Knees"
+      ],
+      [
+        2,
+        "Wall Stork"
+      ],
+      [
+        3,
+        "Cats and Dogs"
+      ],
+      [
+        4,
+        "Lying Supine"
+      ],
+      [
+        5,
+        "Modified Floor Block"
+      ],
+      [
+        6,
+        "Cats and Dogs"
+      ],
+      [
+        7,
+        "Air Bench"
+      ]
     ],
     "Hips Pelvis (no Pain)": [
-      "Static Back with Knee Pillow Squeezes",
-      "Hooklying Rocking Chair",
-      "Hip Lift",
-      "Pelvic Tilts",
-      "Foot Circles and Point Flexes",
-      "Floor Block",
-      "Active Wishbone",
-      "Kneeling Counter Stretch",
-      "Gravity Drop"
+      [
+        1,
+        "Knee-Pillow Squeezes in Static Back"
+      ],
+      [
+        2,
+        "Hooklying Rocking Chair"
+      ],
+      [
+        3,
+        "Hip Lifts"
+      ],
+      [
+        4,
+        "Pelvic Tilts"
+      ],
+      [
+        5,
+        "Foot Circles/Point Flexes"
+      ],
+      [
+        6,
+        "Floor Block"
+      ],
+      [
+        7,
+        "Active Wishbone"
+      ],
+      [
+        8,
+        "Kneeling Counter Stretch"
+      ],
+      [
+        9,
+        "Gravity Drop"
+      ]
     ],
     "Hips Pelvis (with Pain)": [
-      "Short Foot",
-      "Hanging",
-      "Cats and Dogs",
-      "Static Back",
-      "Hooklying Rocking Chair",
-      "Universal Supine Femur Rotations",
-      "Pelvic Tilts",
-      "Static Extension",
-      "Cats and Dogs",
-      "Air Bench"
+      [
+        1,
+        "Short foot"
+      ],
+      [
+        2,
+        "Hanging"
+      ],
+      [
+        3,
+        "Cats and Dogs"
+      ],
+      [
+        4,
+        "Static Back"
+      ],
+      [
+        5,
+        "Hooklying Rocking Chair"
+      ],
+      [
+        6,
+        "Unilateral Supine Femur Rotations"
+      ],
+      [
+        7,
+        "Pelvic Tilts"
+      ],
+      [
+        8,
+        "Static Extension Position"
+      ],
+      [
+        9,
+        "Cats and Dogs"
+      ],
+      [
+        10,
+        "Air Bench"
+      ]
     ],
     "Back - Lumbar Pain/Herniated Discs": [
-      "Sitting Knee Pillow Squeezes",
-      "Static Back with Knee Pillow Squeezes",
-      "Modified Floor Block",
-      "Static Extension",
-      "Air Bench",
-      "Static Back",
-      "Lying Supine",
-      "Air Bench"
+      [
+        1,
+        "Sitting Knee Pillow Squeezes"
+      ],
+      [
+        2,
+        "Knee-Pillow Squeezes in Static Back"
+      ],
+      [
+        3,
+        "Modified Floor Block"
+      ],
+      [
+        4,
+        "Static Extension Position"
+      ],
+      [
+        5,
+        "Air Bench"
+      ],
+      [
+        6,
+        "Static Back"
+      ],
+      [
+        7,
+        "Lying Supine"
+      ],
+      [
+        8,
+        "Air Bench"
+      ]
     ],
     "Back - Thoracic Back Pain": [
-      "Static Back",
-      "Reverse Presses",
-      "Pullovers",
-      "Floor Block",
-      "Static Extension",
-      "Squat"
+      [
+        1,
+        "Static Back"
+      ],
+      [
+        2,
+        "Reverse Presses"
+      ],
+      [
+        3,
+        "Pullovers"
+      ],
+      [
+        4,
+        "Floor Block"
+      ],
+      [
+        5,
+        "Static Extension Position"
+      ],
+      [
+        6,
+        "Squat"
+      ]
     ],
     "Shoulders with Pain": [
-      "Standing Wall with Block",
-      "Sitting Knee Pillow Squeezes",
-      "Sitting Heel Raises with Block",
-      "Three-position Toe Raises",
-      "Wall Stork",
-      "Static Back",
-      "Progressive Supine Groin",
-      "Cats and Dogs",
-      "Air Bench"
+      [
+        1,
+        "Standing Wall with Pillow between Knees"
+      ],
+      [
+        2,
+        "Sitting Knee Pillow Squeezes"
+      ],
+      [
+        3,
+        "Sitting Heel Raises with Block"
+      ],
+      [
+        4,
+        "Three Posistion Toe Raises"
+      ],
+      [
+        5,
+        "Wall Stork"
+      ],
+      [
+        6,
+        "Static Back"
+      ],
+      [
+        7,
+        "Progressive Supine Groin"
+      ],
+      [
+        8,
+        "Cats and Dogs"
+      ],
+      [
+        9,
+        "Air Bench"
+      ]
     ],
     "Shoulders No Pain but with Motion Restrictions": [
-      "Sitting Knee Pillow Squeezes",
-      "Static Extension",
-      "Sitting Floor",
-      "Seated Arm Circles",
-      "Squat",
-      "Cats and Dogs"
+      [
+        1,
+        "Sitting Knee Pillow Squeezes"
+      ],
+      [
+        2,
+        "Static Extension Position"
+      ],
+      [
+        3,
+        "Sitting Floor"
+      ],
+      [
+        4,
+        "Seated Arm Circles"
+      ],
+      [
+        5,
+        "Squat"
+      ],
+      [
+        6,
+        "Cats and Dogs"
+      ]
     ],
     "Necks": [
-      "Standing Wall with Block",
-      "Short Foot",
-      "Static Extension",
-      "Hero's Pose",
-      "Sitting Knee Pillow Squeezes",
-      "Air Bench"
+      [
+        1,
+        "Standing Wall with Pillow between Knees"
+      ],
+      [
+        2,
+        "Short foot"
+      ],
+      [
+        3,
+        "Static Extension Position"
+      ],
+      [
+        4,
+        "Hero's Pose"
+      ],
+      [
+        5,
+        "Flexion Knee Pillow Squeezes"
+      ],
+      [
+        5,
+        "Sitting Knee Pillow Squeezes"
+      ],
+      [
+        6,
+        "Air Bench"
+      ]
     ],
     "Headaches": [
-      "Static Wall with Block",
-      "Slant Board Ankle Sequence",
-      "Static Extension",
-      "Static Back",
-      "Pullovers",
-      "Cats and Dogs"
+      [
+        1,
+        "Standing Wall with Pillow between Knees"
+      ],
+      [
+        2,
+        "Slant Board Ankle Sequence"
+      ],
+      [
+        3,
+        "Static Extension Position"
+      ],
+      [
+        4,
+        "Static Back"
+      ],
+      [
+        5,
+        "Pullovers"
+      ],
+      [
+        6,
+        "Cats and Dogs"
+      ]
     ],
     "Elbows": [
-      "Standing Chest Openers - Unilateral",
-      "Standing Chest Openers - Bilateral",
-      "Hanging",
-      "Wall Elbow Curls",
-      "Static Extension",
-      "Wall Clock",
-      "Cats and Dogs",
-      "Progressive Supine Groin"
+      [
+        1,
+        "Standing Chest Openers, Unilateral"
+      ],
+      [
+        2,
+        "Standing Chest Openers, Bilateral"
+      ],
+      [
+        3,
+        "Hanging"
+      ],
+      [
+        4,
+        "Wall Elbow Curls"
+      ],
+      [
+        5,
+        "Static Extension Position"
+      ],
+      [
+        6,
+        "Wall Clock"
+      ],
+      [
+        7,
+        "Cats and Dogs"
+      ],
+      [
+        8,
+        "Progressive Supine Groin"
+      ]
     ],
     "Hands and Wrists": [
-      "Sshoulder Shrugs",
-      "Shoulder Rolls",
-      "Standing Wall with Block",
-      "Standing Quad Stretch",
-      "Hanging",
-      "Wall Clock",
-      "Air Bench"
+      [
+        1,
+        "Shoulder Shrugs"
+      ],
+      [
+        2,
+        "Shoulder Rolls"
+      ],
+      [
+        3,
+        "Standing Wall with Pillow between Knees"
+      ],
+      [
+        4,
+        "Standing Quad Stretch"
+      ],
+      [
+        5,
+        "Hanging"
+      ],
+      [
+        6,
+        "Wall Clock"
+      ],
+      [
+        7,
+        "Air Bench"
+      ]
     ]
   }
 }
