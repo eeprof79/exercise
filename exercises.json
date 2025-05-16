@@ -546,7 +546,8 @@
       ],
       "tags": [
         "Hips Pelvis (no Pain)",
-        "Hips Pelvis (with Pain)"
+        "Hips Pelvis (with Pain)",
+        "Scoliosis"
       ],
       "ownIt": "Do 3 sets of 10 repetitions.",
       "timers": [],
@@ -592,7 +593,8 @@
       ],
       "tags": [
         "Hips Pelvis (no Pain)",
-        "Hips Pelvis (with Pain)"
+        "Hips Pelvis (with Pain)",
+        "Scoliosis"
       ],
       "ownIt": "Do 1 set of 10 repetitions.",
       "timers": [],
@@ -772,7 +774,8 @@
         "images/ReversePresses.jpg"
       ],
       "tags": [
-        "Back - Thoracic Back Pain"
+        "Back - Thoracic Back Pain",
+        "Scoliosis"
       ],
       "ownIt": "Do 15 times, 3 sets.",
       "timers": [],
@@ -795,7 +798,8 @@
       ],
       "tags": [
         "Back - Thoracic Back Pain",
-        "Headaches"
+        "Headaches",
+        "Scoliosis"
       ],
       "ownIt": "Do 15 times, 3 sets.",
       "timers": [],
@@ -816,7 +820,8 @@
       ],
       "tags": [
         "Back - Thoracic Back Pain",
-        "Shoulders No Pain but with Motion Restrictions"
+        "Shoulders No Pain but with Motion Restrictions",
+        "Scoliosis"
       ],
       "ownIt": "Hold for 1 or 2 minutes.",
       "timers": [
@@ -1533,6 +1538,28 @@
       [
         7,
         "Air Bench"
+      ]
+    ],
+    "Scoliosis": [
+      [
+        1,
+        "Reverse Presses"
+      ],
+      [
+        2,
+        "Pullovers"
+      ],
+      [
+        3,
+        "Squat"
+      ],
+      [
+        4,
+        "Hooklying Rocking Chair"
+      ],
+      [
+        5,
+        "Pelvic Tilts"
       ]
     ]
   }
